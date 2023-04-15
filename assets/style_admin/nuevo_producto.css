@@ -1,0 +1,116 @@
+.contet_nuevo-product form{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.contet_nuevo-product .inputs_form{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.inputs_form > div{
+    width: 100%;
+    padding:.8rem 1rem;
+}
+.inputs_form > div > input{
+    width: 100%;
+    width: 100%;
+    padding: .8rem 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 3px solid rgba(0,0,0,.4);
+}
+
+.inputs_form .precio__form{
+    position: relative;
+    padding-left: 1.5rem;
+}
+.inputs_form .precio__form #precio{
+    padding-left: 1.4rem;
+}
+.inputs_form .precio__form span{
+    position: absolute;
+    top: 57px;
+    left: 35px;
+    font-size: 1.3rem;
+    opacity: .5;
+}
+
+.inputs_form  > div > label{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-bottom: .8rem;
+}
+
+.inputs_form > div > input:focus,
+.inputs_form .precio__form input:focus ~span {
+    border-color: #000;
+    opacity: 1;
+}
+
+
+
+/* input radio */
+.gb__form .radios__form{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.radios__form div{
+    position: relative;
+    width: calc(50% - 16px);
+    margin: 0 .5rem;
+    margin-bottom: .5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.radios__form div input[type=radio]{
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    border: 0px; 
+    background-color: #fff;
+}
+
+
+.radios__form  label{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.150rem;
+    font-weight: 400;
+    padding: .5rem;
+    border: 3px solid rgba(0,0,0,1);
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: .4;
+}
+.radios__form div input[type=radio]:checked ~label{
+    opacity: 1;
+}
+
+/*boton  */
+.contet_nuevo-product button{
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    background-color: #0071ea;
+    color: #fff;
+    cursor: pointer;
+}

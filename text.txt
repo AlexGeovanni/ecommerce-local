@@ -1,0 +1,96 @@
+{
+         id:2,
+         url_img:"../../img/iphones/iphone14_pro_max_black.jpg",
+         titulo:"Iphone 14 PRO MAX",
+         color:"Black",
+         gb:"256",
+         precio:"30000"
+     },
+     {
+         id:3,
+         url_img:"../../img/iphones/iphone14_pro_max_silver.jpg",
+         titulo:"Iphone 14 PRO MAX",
+         color:"Silver",
+         gb:"256",
+         precio:"30000"
+     },
+     {
+         id:4,
+         url_img:"../../img/iphones/iphone14_purple.jpg",
+         titulo:"Iphone 14 ",
+         color:"Purple",
+         gb:"128",
+         precio:"20000"
+     },
+     {
+         id:5,
+         url_img:"../../img/iphones/iphone14_red.jpg",
+         titulo:"Iphone 14",
+         color:"Red",
+         gb:"256",
+         precio:"24000"
+     },
+     {
+         id:6,
+         url_img:"../../img/iphones/iphone14_yellow.jpg",
+         titulo:"Iphone 14",
+         color:"Gold",
+         gb:"128",
+         precio:"20000"
+     },
+     {
+         id:7,
+         url_img:"../../img/iphones/iphone14_midnight.jpg",
+         titulo:"Iphone 14",
+         color:"Midnight ",
+         gb:"512",
+         precio:"28000"
+     },
+     {
+         id:8,
+         url_img:"../../img/iphones/iphone14_blue.jpg",
+         titulo:"Iphone 14",
+         color:"Blue",
+         gb:"256",
+         precio:"24000"
+     },
+     {
+         id:9,
+         url_img:"../../img/iphones/iphoneSE_3rd_gen_midnight.jpg",
+         titulo:"Iphone SE",
+         color:"Midnight ",
+         gb:"128",
+         precio:"13000"
+     },
+     {
+         id:10,
+         url_img:"../../img/iphones/iphoneSE_3rd_gen_red.jpg",
+         titulo:"Iphone SE",
+         color:"Red",
+         gb:"128",
+         precio:"13000"
+     },
+     {
+         id:11,
+         url_img:"../../img/iphones/iphoneSE_3rd_gen_starlight.jpg",
+         titulo:"Iphone 14 PRO MAX",
+         color:"Star light",
+         gb:"128",
+         precio:"13000"
+     },
+     {
+         id:12,
+         url_img:"../../img/iphones/iphone13_pro_max_alpine_green.jpg",
+         titulo:"Iphone 13 PRO MAX",
+         color:"Alpine Green",
+         gb:"256",
+         precio:"27000"
+     },
+     {
+         id:13,
+         url_img:"../../img/iphones/iphone13_pro_max.jpg",
+         titulo:"Iphone 14 PRO MAX",
+         color:"Black",
+         gb:"128",
+         precio:"25000"
+     }

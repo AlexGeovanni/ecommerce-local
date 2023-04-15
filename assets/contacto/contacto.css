@@ -1,0 +1,67 @@
+.contacto{
+    height: 60vh;
+    padding: 1rem;
+    background-color: rgb(224, 236, 252);
+}
+
+.content__contacto{
+    max-width: 80%;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.content__contacto .mas-contacto__contacto{
+    max-width: 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content__contacto .mas-contacto__contacto a{
+    color: var(--negro);
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+.content__contacto .mensage__contacto{
+    width: 500px;
+}
+.content__contacto .mensage__contacto h2{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.content__contacto .mensage__contacto div{
+    width: 100%;
+    position: relative;
+    padding: .2rem 0;
+}
+.content__contacto .mensage__contacto div input,
+.content__contacto .mensage__contacto div textarea{
+    width: 100%;
+    padding: 1.1rem .9rem .3rem .9rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.content__contacto .mensage__contacto div span{
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.content__contacto .mensage__contacto div input:valid ~span,
+.content__contacto .mensage__contacto div input:focus ~span,
+.content__contacto .mensage__contacto div textarea:focus ~span,
+.content__contacto .mensage__contacto div textarea:valid ~span
+{
+    top: 4px;
+    left: 13px;
+    font-size: .8rem;
+    transition: all .3s ease-in-out;
+}

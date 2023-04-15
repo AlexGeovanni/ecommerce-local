@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+
+    <!-- link de icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets//all_style.css">
+    <!-- header -->
+    <link rel="stylesheet" href="./assets/header/header.css">
+    <link rel="stylesheet" href="./assets/header/nav-menu.css">
+    <link rel="stylesheet" href="./assets/registro_entrar.css">
+
+
+    <link rel="stylesheet" href="./assets/style_index/content_iphone.css">
+    <link rel="stylesheet" href="./assets/style_index/card.css">
+    <link rel="stylesheet" href="/assets/style_index/banner.css">
+
+    <link rel="stylesheet" href="./assets/añadidir_producto/productos.css">
+    <!-- <link rel="stylesheet" href="./assets/style_index/productos_agregados.css/productos.css"> -->
+
+    <!-- contacto -->
+    <link rel="stylesheet" href="./assets/contacto/contacto.css">
+    <link rel="stylesheet" href="./assets/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="content-header">
+            <div class="logo">
+                <h1>E-commerce</h1>
+            </div>
+            <div class="content-nav">
+                <form class="buscador" data-conteBuscador>
+                    <input class="" type="search" placeholder="Buscador" data-inputBusca>
+                    <div class="content__icon" data-conteIcon>
+                        <i class="icon__buscar fa-solid fa-magnifying-glass" data-buscador></i>
+                        <i class="icon_cerrar fa-solid fa-xmark" data-cerrar></i>
+                    </div>
+                </form>
+                <nav class="nav">
+                    <ul>
+                        <li class="content-menu">
+                            <a href="./index.html">Inicio</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="menu">
+                                <li><a href="#content_cards">Celulares</a></li>
+                                <li><a href="#">Computadoras</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </li>
+                        <li class="dash"><a href="./dashboard.html">Dashboard</a></li>
+                    </ul>
+                </nav>
+                <div class="carrito-compra">
+                    <i class="fa-solid fa-cart-shopping" data-shop></i>
+                </div>
+                <div class="usuario" data-usuario>
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="modal" data-contentModal>
+        <div class="content-principal">
+            <div class="content iniciar  close__form" data-iniciaForm>
+                <i class=" fa-solid fa-xmark" data-closeModal></i>
+                <h1 class="titulo titulo__ingresar">Iniciar session</h1>
+                <form action="" class="formulario form__ingresar">
+                    <div>
+                        <input id="email-inicia" type="email" required>
+                        <span>Correo</span>
+                    </div>
+                    <div>
+                        <input id="contra-inicia" type="password" autocomplete="on" required>
+                        <span>Contraseña</span>
+                    </div>
+                    <input class="boton" type="submit" value="Ingresar">
+                </form>
+                <div class="opciones__ingresar">
+                    <p>¿Aun no tienes cuenta? <span data-registrar>Registrate</span></p>
+                    <div class="facebook__opcion">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Continuar con Facebook</p>
+                    </div>
+                    <div class="google__opcion">
+                        <i class="fa-brands fa-google"></i>
+                        <p>Continuar con Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content registro " data-registraForm>
+                <i class="fa-solid fa-xmark" data-closeModal></i>
+                <h1 class="titulo titulo__ingresar">Crear cuenta</h1>
+                <form action="" class="formulario form__ingresar">
+                    <div>
+                        <input id="nombre-regis" type="text" required>
+                        <span>Nombre</span>
+                    </div>
+                    <div>
+                        <input id="email-regis" type="email" required>
+                        <span>Correo</span>
+                    </div>
+                    <div>
+                        <input id="contra-regis" type="password" autocomplete="on" required>
+                        <span>Contraseña</span>
+                    </div>
+                    <input class="boton" type="submit" value="Registrarse">
+                </form>
+                <div class="opciones__ingresar">
+                    <p>Ya tengo cuenta <span data-entrar>Entrar</span></p>
+                    <div class="facebook__opcion">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Continuar con Facebook</p>
+                    </div>
+                    <div class="google__opcion">
+                        <i class="fa-brands fa-google"></i>
+                        <p>Continuar con Google</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="productos" data-productos>
+        <i class="fa-solid fa-chevron-right cerrar_productos" data-cerraCarrito></i>
+
+        <h1>Productos añadidos</h1>
+        <div class="productos_agregados" data-productosAñadidos>
+        </div>
+
+        <div class="producto__final">
+            <div>
+                <h2>Produtos totales</h2>
+                <p data-cantidad>0</p>
+            </div>
+
+            <div>
+                <h2>Precio total</h2>
+                <p data-total>0</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="banners">
+            <div class="imgen__banners" data-banners>
+                    <img class="img__banner" src="./img/banner/hero_iphone14_yellow_banner_copi.jpg" alt="">
+                    <img class="img__banner" src="./img/banner/Samsung_Bannerjpg.jpg" alt="">
+                    <img class="img__banner" src="./img/banner/laptops.jpg" alt="">  
+                    <img class="img__banner" src="./img/banner/banner-iphone-12.jpg" alt="">
+            </div>
+            <ul class="banners__puntos">
+                <li class="punto activo "></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+        </section>
+        <section class="iphone">
+            <div id="content_cards" class="content__iphone">
+            </div>
+        </section>
+
+        </section>
+        <section id="contacto" class="contacto">
+            <div class="content__contacto">
+                <div class="logo__contacto">
+                    <h1>E-commerce</h1>
+                </div>
+                <div class="mas-contacto__contacto">
+                    <a href="#">Quienes somos</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Programa de fidelidad</a>
+                    <a href="#">Nuestra tienda</a>
+                    <a href="#">Quiero ser franquiciado</a>
+                    <a href="#">Anúie aquí</a>
+                </div>
+                <div class="mensage__contacto">
+                    <h2>Hable con nosotros</h2>
+                    <div>
+                        <input type="text" required>
+                        <span>Nombre</span>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="40" rows="6" required></textarea>
+                        <span>Escriba el mensaje</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; 2023 Alex Geovanni | Oracle + AluraLatam</p>
+            <a href="https://github.com/AlexGeovanni" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://www.linkedin.com/in/alex-geovanni-diaz-279545231/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+        </div>
+    </footer>
+    <script src="./js/Dom/modal-registro.js"></script>
+    <script src="./js/Dom/headerBuscador.js"></script>
+
+    <!-- Este scrip solo para el index -->
+    <script type="module" src="./js/controllers/lista_ciente.controller.js" defer></script>
+    <script src="./js/Dom/banner.js"></script>
+</body>
+
+</html>

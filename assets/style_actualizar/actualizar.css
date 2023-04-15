@@ -1,0 +1,101 @@
+main{
+    margin-top: 70px;
+}
+
+.content_actualizar{
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content_actualizar h1{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.content_actualizar .inputs__form{
+    display: flex;
+    width: 100%;
+}
+.content_actualizar .inputs__form > div{
+    width: 100%;
+    padding:.8rem 1rem;
+}
+.content_actualizar .inputs__form input{
+    width: 100%;
+    padding: .8rem 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,.4);
+}
+.content_actualizar .inputs__form > div > label{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-bottom: .8rem;
+}
+
+/* botton */
+.content_actualizar button{
+    display: block;
+    width: 350px;
+    margin: auto;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    background-color: #0071ea;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+/* Estilos de inputs tipo radio */
+
+.gb__form .radios__form{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.radios__form div{
+    position: relative;
+    width: calc(50% - 16px);
+    margin: 0 .5rem;
+    margin-bottom: .5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.radios__form div input[type=radio]{
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    border: 0px; 
+    background-color: #fff;
+}
+
+
+.content_actualizar .inputs__form .radios__form label{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.150rem;
+    font-weight: 400;
+    padding: .5rem;
+    border: 3px solid rgba(0,0,0,1);
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: .4;
+}
+.radios__form div input[type=radio]:checked ~label{
+    opacity: 1;
+}

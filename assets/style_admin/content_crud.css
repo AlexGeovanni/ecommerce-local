@@ -1,0 +1,94 @@
+main{
+    margin-top: 70px;
+    background-color: #fcfcfc;
+    padding: 2rem 0;
+}
+
+main .content_crud h1{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main .content_crud .lista_producto,
+main .content_crud .contet_nuevo-product{
+    width: 1100px;
+    margin: auto;
+    background-color: #fff;
+    padding: 1rem .5rem;
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px -15px #000;
+}
+
+main .content_crud .contet_nuevo-product{
+    display: none;
+}
+
+main .content_crud h2{
+    text-align: center;
+}
+
+main .content_crud .lista__cabecera h2{
+    font-size: 1.1rem; 
+    padding: .6rem;
+    font-weight: 500;
+}
+
+main .content_crud .lista__content_producto h2{
+    color: rgba(0,0,0,.7);
+    font-weight: 300;
+    font-size: 1.150rem;
+}
+
+.lista__cabecera h2{
+    font-size: 1.320rem;
+}
+
+.lista_producto .lista__cabecera,
+.lista_producto .lista__content_producto .producto{
+    display: flex;
+    align-items: center;
+}
+
+.lista_producto .lista__cabecera{
+    border-width: 0 0 2px 0;
+    border-color: #0000006c;
+    border-style: solid;
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* definiendo el tamaño de cada celda */
+.cabecera__img,
+.producto__img{
+    width: 120px;
+}
+
+.cabecera__nombre,
+.producto__nombre{
+    width: 300px;
+}
+
+.cabecera__color,
+.producto__color{
+    width:130px;
+}
+
+.cabecera__gb,
+.producto__gb{
+    width: 80px;
+}
+
+.cabecera__precio,
+.producto__precio{
+    width: 170px;
+}
+
+.cabecera__acciones,
+.producto__acciones{
+    width: 300px;
+}
+
+

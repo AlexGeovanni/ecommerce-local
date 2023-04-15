@@ -1,0 +1,140 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--bgcolor);
+    z-index: 10;
+    box-shadow: 1px 5px 13px -15px rgba(0,0,0,.5);
+}
+
+.content-header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.content-nav i{
+    cursor: pointer;
+    font-size: 1.350rem;
+}
+.content-nav .buscador,
+.content-nav .menu,
+.content-nav .carrito-compra,
+.content-nav .usuario{
+    margin-right: 1.2rem;
+}
+
+
+
+
+/* buscador */
+
+.content-nav .buscador{
+    position: relative;
+    width:35px;
+    height: 35px;
+    border-radius: 10px;
+    transition:  all .3s ease-in-out;
+    border: 2px solid;
+    padding: .2rem;
+}
+
+.buscador input{
+    outline: none;
+    border: none;
+    height: 100%;
+    width:calc(100% - 35px);
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius:10px;
+    padding: 0 .8rem;
+}
+
+.buscador div{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: -4px;
+    display: grid;
+    place-items: center;
+    background-color: var(--colorLetra);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buscador .icon__buscar,
+.buscador  .icon_cerrar{
+    position: absolute;
+    font-size: 1.2rem;
+    transition: all .4s ease-in-out;
+    color: #fff;
+} 
+
+.buscador .icon_cerrar{
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+}
+
+
+.content-nav .show__buscador{
+    width: 280px;
+    transition:  all .5s ease-in-out;
+}
+
+.show__buscador .icon_cerrar{
+    opacity: 1;
+    pointer-events: inherit;
+}
+.show__buscador .icon__buscar{
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+}
+.show__buscador div{
+    background-color: #1f1f11;
+}
+
+
+
+/* carrito ce compra */
+.content-nav .carrito-compra i{
+    position: relative;
+}
+.carrito-compra i.comprando::after{
+    position: absolute;
+    content: attr(data-contet);
+    font-size: 8px;
+    width:18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f01616;
+    top: -10px;
+    right: -8px;
+    border-radius: 50%;
+}
+
+
+/* usuario */
+.content-nav .usuario i{
+    font-size: 1.650rem;
+    margin-left: 1.2rem;
+}
+
+.content-nav .usuario i:hover,
+.content-nav .carrito-compra i:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}

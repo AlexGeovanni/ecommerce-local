@@ -1,0 +1,180 @@
+{
+  "iphone": [
+    {
+      "id": "f2bdbebf-6908-4d7a-85d9-eb4a81c2e19d",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14",
+      "color": "white",
+      "gb": "64",
+      "precio": "25000"
+    },
+    {
+      "id": "ae2f5a99-894d-46e8-addd-f225bdc9e8dd",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone SE",
+      "color": "Yellow",
+      "gb": "512",
+      "precio": "30000"
+    },
+    {
+      "id": "15bfd5a8-9fca-475f-a2c5-3040f113c1ff",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "white",
+      "gb": "128",
+      "precio": "25000"
+    },
+    {
+      "id": "75ebe2a1-9188-4b84-b005-a73c370d92ff",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 ",
+      "color": "Gold",
+      "gb": "256",
+      "precio": "25000"
+    },
+    {
+      "id": "9aad2db7-b936-4e73-ae84-70902f57d732",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Blue",
+      "gb": "256",
+      "precio": "25000"
+    },
+    {
+      "id": "ae2f5a99-894d-46e8-addd-f225bdc9e8dd",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone SE",
+      "color": "Yellow",
+      "gb": "512",
+      "precio": "30000"
+    },
+    {
+      "id": "15bfd5a8-9fca-475f-a2c5-3040f113c1ff",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "white",
+      "gb": "128",
+      "precio": "25000"
+    },
+    {
+      "id": "75ebe2a1-9188-4b84-b005-a73c370d92ff",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 ",
+      "color": "Gold",
+      "gb": "256",
+      "precio": "25000"
+    },
+    {
+      "id": "9aad2db7-b936-4e73-ae84-70902f57d732",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Blue",
+      "gb": "256",
+      "precio": "25000"
+    },
+    {
+      "id": "2c148230-48c6-4425-98e0-d8ad0d2ea20a",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Black",
+      "gb": "256",
+      "precio": "250"
+    },
+    {
+      "id": "ae2f5a99-894d-46e8-addd-f225bdc9e8dd",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone SE",
+      "color": "Yellow",
+      "gb": "512",
+      "precio": "30000"
+    },
+    {
+      "id": "15bfd5a8-9fca-475f-a2c5-3040f113c1ff",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "white",
+      "gb": "128",
+      "precio": "25000"
+    },
+    {
+      "id": "75ebe2a1-9188-4b84-b005-a73c370d92ff",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 ",
+      "color": "Gold",
+      "gb": "256",
+      "precio": "25000"
+    },
+    {
+      "id": "9aad2db7-b936-4e73-ae84-70902f57d732",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Blue",
+      "gb": "256",
+      "precio": "25000"
+    },
+    {
+      "id": "2c148230-48c6-4425-98e0-d8ad0d2ea20a",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Black",
+      "gb": "256",
+      "precio": "250"
+    },
+    {
+      "id": "ae2f5a99-894d-46e8-addd-f225bdc9e8dd",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone SE",
+      "color": "Yellow",
+      "gb": "512",
+      "precio": "30000"
+    },
+    {
+      "id": "15bfd5a8-9fca-475f-a2c5-3040f113c1ff",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "white",
+      "gb": "128",
+      "precio": "25000"
+    },
+    {
+      "id": "75ebe2a1-9188-4b84-b005-a73c370d92ff",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 ",
+      "color": "Gold",
+      "gb": "256",
+      "precio": "25000"
+    },
+    {
+      "id": "9aad2db7-b936-4e73-ae84-70902f57d732",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Blue",
+      "gb": "256",
+      "precio": "25000"
+    },
+    {
+      "id": "2c148230-48c6-4425-98e0-d8ad0d2ea20a",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Black",
+      "gb": "256",
+      "precio": "250"
+    },
+    {
+      "id": "8a5b990c-7fe7-46c0-9d03-13f062a4cc7a",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Black",
+      "gb": "256",
+      "precio": "250"
+    },
+    {
+      "id": "ba6eca50-2e33-49a3-a143-7d33c294c8a6",
+      "img": "../../img/iphones/iphone14_pro_max_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Gold",
+      "gb": "512",
+      "precio": "2500"
+    }
+  ]
+}

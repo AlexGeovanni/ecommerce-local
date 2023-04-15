@@ -1,0 +1,55 @@
+.lista__content_producto .producto__img img{
+    width: 100%;
+    aspect-ratio: 4/2;
+    object-fit: contain;
+}
+
+.lista__content_producto .producto{
+    margin-bottom: 1rem;
+}
+
+.producto .producto__acciones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.producto .producto__acciones button,
+.producto .producto__acciones a
+{
+    width: 45%;
+    border: none;
+    padding: .6rem 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+}
+
+.producto .producto__acciones i{
+    margin-left: 8px;
+}
+
+.producto .producto__acciones .editar{
+    border: 2px solid rgba(25, 133, 255, 0.5);
+    background-color: rgba(25, 133, 255, 0.2);
+}
+
+.producto .producto__acciones .editar i{
+    color: rgba(25, 133, 255, 1);
+}
+
+.producto .producto__acciones .eliminar{
+    border: 2px solid rgba(255, 52, 25, 0.5);
+    background-color: rgba(255, 52, 25, 0.2);
+}
+
+.producto .producto__acciones .eliminar i{
+    color: rgba(255, 52, 25, 1);
+}
+
+.producto .producto__acciones button:hover,
+.producto .producto__acciones a:hover{
+    border-color: transparent;
+    transition: all .3s ease-in-out;
+}

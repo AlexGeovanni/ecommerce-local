@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar productos</title>
+
+    <!-- link de icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets//all_style.css">
+    <!-- header -->
+    <link rel="stylesheet" href="./assets/header/header.css">
+    <link rel="stylesheet" href="./assets/header/nav-menu.css">
+    <link rel="stylesheet" href="./assets/registro_entrar.css">
+
+    <link rel="stylesheet" href="./assets/añadidir_producto/productos.css">
+
+    <!-- main -->
+    <link rel="stylesheet" href="./assets/style_admin/content_crud.css">
+    <link rel="stylesheet" href="./assets/style_admin/lista_producto.css">
+    <link rel="stylesheet" href="./assets/style_admin/lista_control.css">
+    <link rel="stylesheet" href="./assets/style_admin/nuevo_producto.css">
+
+    <!-- contacto -->
+    <link rel="stylesheet" href="./assets/contacto/contacto.css">
+    <link rel="stylesheet" href="./assets/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="content-header">
+            <div class="logo">
+                <h1>E-commerce</h1>
+            </div>
+            <div class="content-nav">
+                <form class="buscador" data-conteBuscador>
+                    <input class="" type="search" placeholder="Buscador" data-inputBusca>
+                    <div class="content__icon" data-conteIcon>
+                        <i class="icon__buscar fa-solid fa-magnifying-glass" data-buscador></i>
+                        <i class="icon_cerrar fa-solid fa-xmark" data-cerrar></i>
+                    </div>
+                </form>
+                <nav class="nav">
+                    <ul>
+                        <li class="content-menu">
+                            <a href="./index.html">Inicio</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="menu">
+                                <li><a href="./index.html">Celulares</a></li>
+                                <li><a href="./index.html">Computadoras</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                            </ul>
+                        </li>
+                        <li class="dash"><a href="./dashboard.html">Dashboard</a></li>
+                    </ul>
+                </nav>
+                <div class="carrito-compra">
+                    <i class="fa-solid fa-cart-shopping" data-shop></i>
+                </div>
+                <div class="usuario" data-usuario>
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="modal" data-contentModal>
+        <div class="content-principal">
+            <div class="content iniciar  close__form" data-iniciaForm>
+                <i class=" fa-solid fa-xmark" data-closeModal></i>
+                <h1 class="titulo titulo__ingresar">Iniciar session</h1>
+                <form  class="formulario form__ingresar">
+                    <div>
+                        <input id="email-inicia" type="email" >
+                        <span>Correo</span>
+                    </div>
+                    <div>
+                        <input id="contra-inicia" type="password" autocomplete="on" >
+                        <span>Contraseña</span>
+                    </div>
+                    <input class="boton" type="submit" value="Ingresar">
+                </form>
+                <div class="opciones__ingresar">
+                    <p>¿Aun no tienes cuenta? <span data-registrar>Registrate</span></p>
+                    <div class="facebook__opcion">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Continuar con Facebook</p>
+                    </div>
+                    <div class="google__opcion">
+                        <i class="fa-brands fa-google"></i>
+                        <p>Continuar con Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content registro " data-registraForm>
+                <i class="fa-solid fa-xmark" data-closeModal></i>
+                <h1 class="titulo titulo__ingresar">Crear cuenta</h1>
+                <form  class="formulario form__ingresar">
+                    <div>
+                        <input id="nombre-regis" type="text" >
+                        <span>Nombre</span>
+                    </div>
+                    <div>
+                        <input id="email-regis" type="email" >
+                        <span>Correo</span>
+                    </div>
+                    <div>
+                        <input id="contra-regis" type="password" autocomplete="on" required>
+                        <span>Contraseña</span>
+                    </div>
+                    <input class="boton" type="submit" value="Registrarse">
+                </form>
+                <div class="opciones__ingresar">
+                    <p>Ya tengo cuenta <span data-entrar>Entrar</span></p>
+                    <div class="facebook__opcion">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Continuar con Facebook</p>
+                    </div>
+                    <div class="google__opcion">
+                        <i class="fa-brands fa-google"></i>
+                        <p>Continuar con Google</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="content_crud">
+            <h1>Vista de administrador</h1>
+            <div class="lista__control">
+                <h2 data-edit_elimina class="edita-elimina activo">Editar-Eliminar</h2>
+                <h2 data-nuevo class="nuevo-producto">Nuevo producto</h2>
+            </div>
+            <div data-listas class="lista_producto">
+                <div class="lista__cabecera">
+                    <h2  class="cabecera__img">Imagen</h2>
+                    <h2 class="cabecera__nombre">Nombre</h2>
+                    <h2 class="cabecera__color">Color</h2>
+                    <h2 class="cabecera__gb">Gb</h2>
+                    <h2 class="cabecera__precio">Precio</h2>
+                    <h2 class="cabecera__acciones">Acciones</h2>
+                </div>
+                <div id="productoDash" class="lista__content_producto" >
+                    <div class="producto">
+                        <div class="producto__img">
+                            <img src="./img/iphones/iphone13_pro_max.jpg" alt="">
+                        </div>
+                        <h2 class="producto__nombre">Iphone 14 PRO MAX</h2>
+                        <h2 class="producto__color">black</h2>
+                        <h2 class="producto__gb">256Gb</h2>
+                        <h2 class="producto__precio">$340000</h2>
+                        <div class="producto__acciones">
+                            <a href="./actualizar_producto.html" class="editar">Editar <i class="fa-sharp fa-solid fa-pen-to-square"></i></a>
+                            <button class="eliminar">Eliminar <i class="fa-sharp fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-registroNuevo class="contet_nuevo-product">
+                <form data-form>
+                    <div class="inputs_form">
+                        <div class="nombre__form">
+                            <label for="nombre">Nombre</label>
+                            <input list="nvProducto" required id="nombre" name="nombre" data-nombre 
+                            pattern="^[A-Za-z\s]{1,}+[0-9\s]{1,}$">
+                            <datalist id="nvProducto">
+                                <option value="Iphone 14 PRO MAX">
+                                <option value="Iphone 14">
+                                <option value="Iphone 13 PRO MAX">
+                                <option value="Iphone SE">
+                            </datalist>
+                        </div>
+                        <div class="color__form">
+                            <label for="color">Color</label>
+                            <input list="ncolor"  required id="color" name="color" data-color 
+                            title="Color debe empezar con una letra mayuscula ejemplo: Red" 
+                            pattern="^[A-Z]{1}[a-z\s]{1,}">
+                            <datalist id="ncolor">
+                                <option value="Black">
+                                <option value="Gold">
+                                <option value="Blue">
+                                <option value="Red">
+                                <option value="Yellow">
+                                <option value="Silver">
+                                <option value="Midnight">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="inputs_form">
+                        <div class="gb__form">
+                            <label for="">Almacenamiento</label>
+                            <div class="radios__form">
+                                <div>
+                                    <input type="radio" name="memoria" id="memoria64" class="checkmark" value="64">
+                                    <label for="memoria64">64 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoria" id="memoria128" class="checkmark" value="128">
+                                    <label for="memoria128">128 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoria" id="memoria256" class="checkmark" value="256">
+                                    <label for="memoria256">256 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoria" id="memoria512" class="checkmark" value="512">
+                                    <label for="memoria512">512 GB</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="precio__form">
+                            <label for="precio">Precio</label>
+                            <input type="number" required id="precio" name="precio"  data-precio 
+                            pattern="^[0-9]{1,}">
+                            <span>$</span>
+                        </div>
+                    </div>
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <section id="contacto" class="contacto">
+        <div class="content__contacto">
+            <div class="logo__contacto">
+                <h1>E-commerce</h1>
+            </div>
+            <div class="mas-contacto__contacto">
+                <a href="#">Quienes somos</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Programa de fidelidad</a>
+                <a href="#">Nuestra tienda</a>
+                <a href="#">Quiero ser franquiciado</a>
+                <a href="#">Anúie aquí</a>
+            </div>
+            <div class="mensage__contacto">
+                <h2>Hable con nosotros</h2>
+                <div>
+                    <input type="text" required>
+                    <span>Nombre</span>
+                </div>
+                <div>
+                    <textarea name="" id="" cols="40" rows="6" ></textarea>
+                    <span>Escriba el mensaje</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pie de pagina -->
+    <footer>
+        <div>
+            <p>&copy; 2023 Alex Geovanni | Oracle + AluraLatam</p>
+            <a href="https://github.com/AlexGeovanni" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://www.linkedin.com/in/alex-geovanni-diaz-279545231/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"
+    integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./js/Dom/modal-registro.js"></script>
+    <script src="./js/Dom/headerBuscador.js"></script>
+
+    <!-- Estos scrip solo para le dashboard -->
+    <script src="./js/Dom/vistaAdmin.js"></script>
+    <script type="module" src="./js/controllers/dashboard.controller.js"></script>
+</body>
+
+</html>

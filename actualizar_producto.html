@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar producto</title>
+
+    <link rel="stylesheet" href="./assets//all_style.css">
+    <!-- header -->
+    <link rel="stylesheet" href="./assets/header/header.css">
+    <link rel="stylesheet" href="./assets/header/nav-menu.css">
+
+    <!-- css solo para esta pagina -->
+    <link rel="stylesheet" href="./assets/style_actualizar/actualizar.css">
+    <!-- contacto -->
+    <link rel="stylesheet" href="./assets/contacto/contacto.css">
+    <link rel="stylesheet" href="./assets/footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="content-header">
+            <div class="logo">
+                <h1>E-commerce</h1>
+            </div>
+            <div class="content-nav">
+                <nav class="nav">
+                    <ul>
+                        <li class="content-menu">
+                            <a href="./index.html">Inicio</a>
+                        </li>
+                        <li class="dash"><a href="./dashboard.html">Dashboard</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="content_actualizar">
+            <h1>Actualizar producto</h1>
+            <form class="form__actualizar" data-formActualizar>
+                <div class="inputs__form">
+                    <div class="nombre__form">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" data-nombre>
+                    </div>
+                    <div class="color__form">
+                        <label for="color">Color</label>
+                        <input type="text" name="color" id="color" data-color>
+                    </div>
+                </div>
+                <div class="inputs__form">
+                    <div class="gb__form">
+                        <label for="almacenamiento">Almacenamiento</label>
+                        <div class="radios__form">
+                            <div>
+                                <input type="radio" name="memoria" id="memoria64" class="checkmark" value="64">
+                                <label for="memoria64">64 GB</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="memoria" id="memoria128" class="checkmark" value="128">
+                                <label for="memoria128">128 GB</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="memoria" id="memoria256" class="checkmark" value="256">
+                                <label for="memoria256">256 GB</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="memoria" id="memoria512" class="checkmark" value="512">
+                                <label for="memoria512">512 GB</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="precio__form">
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio" data-precio>
+                    </div>
+                </div>
+                <button type="submit">Actualizar</button>
+            </form>
+        </section>
+        <section id="contacto" class="contacto">
+            <div class="content__contacto">
+                <div class="logo__contacto">
+                    <h1>E-commerce</h1>
+                </div>
+                <div class="mas-contacto__contacto">
+                    <a href="#">Quienes somos</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Programa de fidelidad</a>
+                    <a href="#">Nuestra tienda</a>
+                    <a href="#">Quiero ser franquiciado</a>
+                    <a href="#">Anúie aquí</a>
+                </div>
+                <div class="mensage__contacto">
+                    <h2>Hable con nosotros</h2>
+                    <div>
+                        <input type="text" required>
+                        <span>Nombre</span>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="40" rows="6"></textarea>
+                        <span>Escriba el mensaje</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+        <div>
+            <p>&copy; 2023 Alex Geovanni | Oracle + AluraLatam</p>
+            <a href="https://github.com/AlexGeovanni" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://www.linkedin.com/in/alex-geovanni-diaz-279545231/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/controllers/actualizar.contoller.js"></script>
+</body>
+
+</html>

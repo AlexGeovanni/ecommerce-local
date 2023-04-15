@@ -1,0 +1,14 @@
+
+
+.iphone{
+    width: 90%;
+    margin: auto;
+    margin-top: 1.55rem;
+    margin-bottom: 1rem;
+}
+.content__iphone{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+    place-items: center;
+    gap: 20px 0;
+}
