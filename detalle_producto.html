@@ -19,11 +19,7 @@
     <link rel="stylesheet" href="./assets/registro_entrar.css">
 
 
-    <link rel="stylesheet" href="./assets/style_index/content_iphone.css">
-    <link rel="stylesheet" href="./assets/style_index/card.css">
-    <link rel="stylesheet" href="/assets/style_index/banner.css">
-
-    <link rel="stylesheet" href="./assets/añadidir_producto/productos.css">
+    <link rel="stylesheet" href="./assets/detalles/detalle.css">
     <!-- <link rel="stylesheet" href="./assets/style_index/productos_agregados.css/productos.css"> -->
 
     <!-- contacto -->
@@ -151,40 +147,30 @@
         </div>
     </div> -->
     <main>
-        <section class="banners">
-            <div class="imgen__banners" data-banners>
-                <img class="img__banner" src="./img/banner/hero_iphone14_yellow_banner_copi.jpg" alt="">
-                <img class="img__banner" src="./img/banner/Samsung_Bannerjpg.jpg" alt="">
-                <img class="img__banner" src="./img/banner/laptops.jpg" alt="">
-                <img class="img__banner" src="./img/banner/banner-iphone-12.jpg" alt="">
-            </div>
-            <ul class="banners__puntos">
-                <li class="punto activo "></li>
-                <li class="punto"></li>
-                <li class="punto"></li>
-                <li class="punto"></li>
-            </ul>
-        </section>
-        <section class="iphones">
-            <h1 class="iphone__titulo">Celulares</h1>
-            <div id="content_cards__iphone" class="content__iphones">
-            </div>
-        </section>
-        <section class="laptops">
-            <h1 class="laptop__titulo">Computadoras</h1>
-            <div id="content_cards__laptop" class="content__laptops">
-                <div class="card__lap">
-                    <div class="image__lap">
-                        <img src="./img/laptos/laptop_hpvictus _negro.webp" alt="">
-                    </div>
-                    <div class="info_lap">
-                        <h2 class="marca"> HP</h2>
-                        <h2 data-titulo class="info">Laptop HP VICTUS Ryzen 7 16GB 512GB SSD RTX3050 Ti</h2>
-                        <p><span>Color: </span>Negro</p>
-                        <h2 data-precio class="precio">$20000</h2>
-                    </div>
-                    <button type="submit" class="agregar" data-button>Agregar</button>
+        <section class="detalle">
+            <div class="info-detalle">
+                <div class="imgen">
+                    <img src="./img/iphones/iphone13promax_midnight.jpg" alt="">
                 </div>
+                <div class="info-producto">
+                    <h2>Informacion del Articulo</h2>
+                    <div class="detalles">
+                        <p>Detalles</p>
+                        <ul>
+                            <li><p>Increibles mejoras en fotos con poca Luz</p></li>
+                            <li><p>Resistencia al agua</p></li>
+                            <li><p>Todo gracias a la potencia del ultrarrápido chip A16 Bionic.</p></li>
+                        </ul>
+                    </div>
+                    <p>Navega dentro de tú tienda en línea para encontrar más variedad de equipos y accesorios</p>
+                </div>
+            </div>
+            <div class="info-principal">
+                <p class="marca">Apple</p>
+                <h2>Iphone 14 pro Apple azul 256GB</h2>
+                <h2 class="precio">$19,000</h2>
+                <p>Hasta 18 meses sin intereses</p>
+                <button>Agregar</button>
             </div>
         </section>
         <section id="contacto" class="contacto">
@@ -229,8 +215,5 @@
 
     <!-- Este scrip solo para el index -->
     <script type="module" src="./js/controllers/anadir_carrito.controller.js"></script>
-    <script type="module" src="./js/controllers/lista_ciente.controller.js"></script>
-    <script src="./js/Dom/banner.js"></script>
 </body>
-
 </html>

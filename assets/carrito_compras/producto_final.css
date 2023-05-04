@@ -1,0 +1,50 @@
+.content-final__producto-anadidos{ 
+    width: 340px;
+}
+.content-final__producto-anadidos h4{
+    font-size: 1.4rem;
+}
+
+.content-final__producto-anadidos  .producto__final{
+    padding: 1rem;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+}
+.producto__final div{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.producto__final div p:first-child{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.producto__final .btn_comprar button{
+    display: block;
+    margin-left: auto;
+    margin-top: 1.2rem;
+    width: 100%;
+    padding: .8rem 0;    
+    background-color:rgb(23, 23, 23);
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.content_tarjetas h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tarjetas img{
+    width: 20%;
+    aspect-ratio: 4/2;
+    object-fit: contain;
+}
+
+.producto__final .btn_comprar button:hover{
+    background-color:rgb(75, 75, 75);
+}

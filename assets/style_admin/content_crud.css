@@ -1,17 +1,18 @@
-main{
-    margin-top: 70px;
-    background-color: #fcfcfc;
-    padding: 2rem 0;
-}
-
 main .content_crud h1{
+    width: 1100px;
+    margin: auto;
+    margin-top: 1rem;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
+    padding: .8rem 0;
+    background-color: #fff;
 }
+
 
 main .content_crud .lista_producto,
 main .content_crud .contet_nuevo-product{
+    position: relative;
     width: 1100px;
     margin: auto;
     background-color: #fff;
@@ -20,6 +21,9 @@ main .content_crud .contet_nuevo-product{
     box-shadow: 1px 10px 15px -15px #000;
 }
 
+main .content_crud .lista_producto{
+    display: block;
+}
 main .content_crud .contet_nuevo-product{
     display: none;
 }

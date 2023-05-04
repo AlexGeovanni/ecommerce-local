@@ -1,0 +1,118 @@
+.content_productos-anadidos{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_productos-anadidos > div{
+    /* border: 1px solid; */
+    display: flex;
+}
+
+.anadidos__producto-anadidos{
+    margin-right: 1rem;
+}
+.anadidos__producto-anadidos button{
+    border: none;
+    cursor: pointer;
+}
+
+.anadidos__producto-anadidos .titulo__anadidos{
+    background-color: #fff;
+    /* border: 1px solid; */
+}
+.anadidos__producto-anadidos h1{
+    padding: .6rem 0;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+.lista__anadidos {
+    max-width: 900px;
+    width: 810px;
+    min-height: 300px;
+    /* border: 1px solid; */
+    margin-top: .4rem;
+    max-height: 70vh;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+/*Webkit*/
+.lista__anadidos::-webkit-scrollbar {
+    width: 4px;
+    height: 5px;
+}
+.lista__anadidos::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.lista__anadidos::-webkit-scrollbar-thumb {
+    background-color: rgb(138, 138, 138);
+    border-radius: 0px;
+}
+
+
+/* producto */
+.lista__anadidos .producto{
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.producto  h2{
+    text-align: center;
+    color: rgba(0,0,0,.9);
+    font-weight: 300;
+    font-size: 1.150rem;
+}
+.producto .img__producto{
+    width: 100px;
+}
+.img__producto img{
+    width: 100%;
+    aspect-ratio: 3/3;
+    object-fit: contain;
+}
+
+/* nombre,color,memoria */
+.producto .info_producto{
+    width: 220px;
+}
+.producto .info_producto h2{
+    text-align: left;
+    font-size: 1.050rem;
+    font-weight: 500;
+}
+
+.producto .cantidad_product input{
+    width:30px ;
+    height: 30px;
+    text-align: center;
+    opacity: .7;
+
+}
+
+.producto .cantidad_product button{
+    width: 30px;
+    height: 25px;
+}
+
+.eliminar_de_carrito{
+    cursor: pointer;
+    padding: .2rem 1rem;
+    /* border: 2px solid rgba(255, 52, 25, .8);
+    background-color: rgba(218, 5, 24, .8); */
+    color: rgb(0, 0, 0);
+    font-size: .9rem;
+}
+.eliminar_de_carrito p{
+    font-size: 1rem;
+}
+.eliminar_de_carrito:hover{
+    background-color:rgb(0, 0, 0) ;
+    color: rgb(255, 255, 255);
+    transition: all .4s ease-in-out;
+}

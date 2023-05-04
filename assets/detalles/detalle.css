@@ -1,0 +1,99 @@
+.detalle{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 4rem;
+}
+.detalle .info-detalle {
+    padding: 0 2rem;
+}
+.detalle .info-detalle .imgen {
+    width: 100%;
+    padding: 0 2rem;
+    background-color: #fff;
+    margin-bottom:1rem ;
+}
+
+.imgen img{
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+
+.info-detalle .info-producto h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .4);
+}
+.info-producto .detalles{
+    padding: 1rem;
+}
+.info-producto  p{
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.detalle ul{
+    padding-left: 2rem;
+}
+.detalles ul li{
+    list-style:circle;
+    font-size: .8rem;
+}
+.info-producto .detalles ul li > p{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+
+/*  */
+.detalle .info-principal{
+    position: sticky;
+    top: 70px;
+    max-width: 450px;
+    padding: 1rem 1.2rem;
+    background-color: #fff;
+}
+.info-principal p{
+    font-size: .9rem;
+    font-weight: 300;
+    margin-bottom: .8rem;
+}
+
+.info-principal .marca{
+    opacity: .8;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.info-principal h2{
+    opacity: .8;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
+}
+.info-principal .precio{
+    opacity: 1;
+    font-size: 1.6rem;
+}
+
+.info-principal button{
+    display: block;
+    margin: auto;
+    width: 80%;
+    cursor: pointer;
+    border: none;
+    background-color:#cccccc;
+    padding: .8rem 0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.info-principal button:hover{
+    background-color: #020202;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}

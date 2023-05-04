@@ -48,7 +48,12 @@
                     </div>
                     <div class="color__form">
                         <label for="color">Color</label>
-                        <input type="text" name="color" id="color" data-color>
+                        <input list="ncolor"  required id="color" name="color" data-color 
+                            title="Color debe empezar con una letra mayuscula ejemplo: Red" 
+                            pattern="^[A-Z]{1}[a-z\s]{1,}">
+                            <datalist id="ncolor">
+
+                            </datalist>
                     </div>
                 </div>
                 <div class="inputs__form">

@@ -8,6 +8,11 @@ html{
     scroll-behavior: smooth;
     scroll-padding:85px ;
 }
+main{
+    margin-top:38px;
+    background-color: #f7f8fa;
+    padding: 2rem 0;
+}
 
 *{
     padding: 0;

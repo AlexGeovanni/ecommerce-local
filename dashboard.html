@@ -16,7 +16,6 @@
     <!-- header -->
     <link rel="stylesheet" href="./assets/header/header.css">
     <link rel="stylesheet" href="./assets/header/nav-menu.css">
-    <link rel="stylesheet" href="./assets/registro_entrar.css">
 
     <link rel="stylesheet" href="./assets/añadidir_producto/productos.css">
 
@@ -60,74 +59,15 @@
                     </ul>
                 </nav>
                 <div class="carrito-compra">
-                    <i class="fa-solid fa-cart-shopping" data-shop></i>
+                    <a href="./carrito_compras.html">Carrito <i class="fa-solid fa-cart-shopping" data-shop></i></a>
                 </div>
                 <div class="usuario" data-usuario>
-                    <i class="fa-solid fa-user-plus"></i>
+                    
                 </div>
             </div>
         </div>
     </header>
-    <section class="modal" data-contentModal>
-        <div class="content-principal">
-            <div class="content iniciar  close__form" data-iniciaForm>
-                <i class=" fa-solid fa-xmark" data-closeModal></i>
-                <h1 class="titulo titulo__ingresar">Iniciar session</h1>
-                <form  class="formulario form__ingresar">
-                    <div>
-                        <input id="email-inicia" type="email" >
-                        <span>Correo</span>
-                    </div>
-                    <div>
-                        <input id="contra-inicia" type="password" autocomplete="on" >
-                        <span>Contraseña</span>
-                    </div>
-                    <input class="boton" type="submit" value="Ingresar">
-                </form>
-                <div class="opciones__ingresar">
-                    <p>¿Aun no tienes cuenta? <span data-registrar>Registrate</span></p>
-                    <div class="facebook__opcion">
-                        <i class="fa-brands fa-facebook"></i>
-                        <p>Continuar con Facebook</p>
-                    </div>
-                    <div class="google__opcion">
-                        <i class="fa-brands fa-google"></i>
-                        <p>Continuar con Google</p>
-                    </div>
-                </div>
-            </div>
-            <div class="content registro " data-registraForm>
-                <i class="fa-solid fa-xmark" data-closeModal></i>
-                <h1 class="titulo titulo__ingresar">Crear cuenta</h1>
-                <form  class="formulario form__ingresar">
-                    <div>
-                        <input id="nombre-regis" type="text" >
-                        <span>Nombre</span>
-                    </div>
-                    <div>
-                        <input id="email-regis" type="email" >
-                        <span>Correo</span>
-                    </div>
-                    <div>
-                        <input id="contra-regis" type="password" autocomplete="on" required>
-                        <span>Contraseña</span>
-                    </div>
-                    <input class="boton" type="submit" value="Registrarse">
-                </form>
-                <div class="opciones__ingresar">
-                    <p>Ya tengo cuenta <span data-entrar>Entrar</span></p>
-                    <div class="facebook__opcion">
-                        <i class="fa-brands fa-facebook"></i>
-                        <p>Continuar con Facebook</p>
-                    </div>
-                    <div class="google__opcion">
-                        <i class="fa-brands fa-google"></i>
-                        <p>Continuar con Google</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <main>
         <section class="content_crud">
             <h1>Vista de administrador</h1>
@@ -147,7 +87,7 @@
                 <div id="productoDash" class="lista__content_producto" >
                     <div class="producto">
                         <div class="producto__img">
-                            <img src="./img/iphones/iphone13_pro_max.jpg" alt="">
+                            <img src="./img/iphones/iphone13promax_green.jpg" alt="">
                         </div>
                         <h2 class="producto__nombre">Iphone 14 PRO MAX</h2>
                         <h2 class="producto__color">black</h2>
@@ -161,7 +101,19 @@
                 </div>
             </div>
             <div data-registroNuevo class="contet_nuevo-product">
-                <form data-form>
+                <div class="elige_producto">
+                    <div>
+                        <input type="radio" name="tipoProducto" id="cel" value="celular" >
+                        <label for="cel">Celular</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tipoProducto" id="compu" value="computadora">
+                        <label for="compu">Computadoras</label>
+                    </div>
+                    <div class="alerta"><i class="fa-solid fa-circle-info"></i><p>Elige primero el tipo de producto.</p></div>
+                </div>
+                <form data-formCel id="celular" class="">
+                    <div class="alerta"><i class="fa-solid fa-circle-info"></i><p>Debe elegir primero el nombre del celular para poder ver los colores disponibles.</p></div>
                     <div class="inputs_form">
                         <div class="nombre__form">
                             <label for="nombre">Nombre</label>
@@ -172,6 +124,7 @@
                                 <option value="Iphone 14">
                                 <option value="Iphone 13 PRO MAX">
                                 <option value="Iphone SE">
+                                <option value="Laptop HP VICTUS ">
                             </datalist>
                         </div>
                         <div class="color__form">
@@ -180,13 +133,7 @@
                             title="Color debe empezar con una letra mayuscula ejemplo: Red" 
                             pattern="^[A-Z]{1}[a-z\s]{1,}">
                             <datalist id="ncolor">
-                                <option value="Black">
-                                <option value="Gold">
-                                <option value="Blue">
-                                <option value="Red">
-                                <option value="Yellow">
-                                <option value="Silver">
-                                <option value="Midnight">
+
                             </datalist>
                         </div>
                     </div>
@@ -215,6 +162,117 @@
                         <div class="precio__form">
                             <label for="precio">Precio</label>
                             <input type="number" required id="precio" name="precio"  data-precio 
+                            pattern="^[0-9]{1,}">
+                            <span>$</span>
+                        </div>
+                    </div>
+                    <button type="submit">Registrar</button>
+                </form>
+                <form data-formCompu id="computadora" class="">
+                    <div class="inputs_form">
+                        <div class="marca__form">
+                            <label for="marca">Marca</label>
+                            <input list="nvmarca" required id="marca" name="marca" data-marca 
+                            pattern="^[A-Za-z\s]{1,}+[0-9\s]{1,}$">
+                            <datalist id="nvmarca">
+                                <option value="Hp">
+                                <option value="Asus">
+                                <option value="MSI">
+                                <option value="Dell ">
+                            </datalist>
+                        </div>
+                        <div class="procesador__form">
+                            <label for="procesador">Procesador</label>
+                            <input list="nprocesador"  required id="procesador" name="procesador" data-procesador >
+                            <datalist id="nprocesador">
+                                <option value="Intel Core i7">
+                                <option value="Intel Core i5">
+                                <option value="Intel Core i3-1115G4">
+                                <option value="AMD Ryzen 9 5900HX">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="inputs_form">
+                        <div class="modelo__form">
+                            <label for="modelo">Modelo</label>
+                            <input list="nvmodelo" required id="modelo" name="modelo" data-modelo 
+                            pattern="^[A-Za-z\s]{1,}+[0-9\s]{1,}$">
+                            <datalist id="nvmodelo">
+
+                            </datalist>
+                        </div>
+                        <div class="color__form">
+                            <label for="color">Color</label>
+                            <input list="ncolores"  required id="color" name="color" data-colores 
+                            title="Color debe empezar con una letra mayuscula ejemplo: Red" 
+                            pattern="^[A-Z]{1}[a-z\s]{1,}">
+                            <datalist id="ncolores">
+                                <option value="Negro">
+                                <option value="Plateado">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="inputs_form">
+                        <div class="gb__form">
+                            <label for="">Almacenamiento SSD </label>
+                            <div class="radios__form">
+                                <div>
+                                    <input type="radio" name="memoriaSSD" id="memoriaSSD128" class="checkmark" value="128">
+                                    <label for="memoriaSSD128">128 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoriaSSD" id="memoriaSSD256" class="checkmark" value="256">
+                                    <label for="memoriaSSD256">256 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoriaSSD" id="memoriaSSD512" class="checkmark" value="512">
+                                    <label for="memoriaSSD512">512 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoriaSSD" id="memoriaSSD1" class="checkmark" value="1">
+                                    <label for="memoriaSSD1">1 TB</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gb__form">
+                            <label for="">Almacenamiento Interno </label>
+                            <div class="radios__form">
+                                <div>
+                                    <input type="radio" name="memoriaIT" id="memoriaIT64" class="checkmark" value="512">
+                                    <label for="memoriaIT64">512 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoriaIT" id="memoriaIT128" class="checkmark" value="1">
+                                    <label for="memoriaIT128">1 TB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoriaIT" id="memoriaIT256" class="checkmark" value="2">
+                                    <label for="memoriaIT256">2 TB</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputs_form">
+                        <div class="gb__form">
+                            <label for="">RAM </label>
+                            <div class="radios__form">
+                                <div>
+                                    <input type="radio" name="memoriaRAM" id="memoriaRAM8" class="checkmark" value="8">
+                                    <label for="memoriaRAM8">8 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoriaRAM" id="memoriaRAM12" class="checkmark" value="12">
+                                    <label for="memoriaRAM12">12 GB</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="memoriaRAM" id="memoriaRAM16" class="checkmark" value="16">
+                                    <label for="memoriaRAM16">16 GB</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="precio__form">
+                            <label for="precio">Precio</label>
+                            <input type="number" required id="precio" name="precio"  data-precioCompu 
                             pattern="^[0-9]{1,}">
                             <span>$</span>
                         </div>
@@ -264,12 +322,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"
     integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script src="./js/Dom/modal-registro.js"></script>
+
     <script src="./js/Dom/headerBuscador.js"></script>
 
     <!-- Estos scrip solo para le dashboard -->
-    <script src="./js/Dom/vistaAdmin.js"></script>
+    <script type="module" src="./js/Dom/vistaAdmin.js"></script>
     <script type="module" src="./js/controllers/dashboard.controller.js"></script>
 </body>
 

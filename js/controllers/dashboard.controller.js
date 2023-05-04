@@ -44,29 +44,87 @@ clientService.listaProductos().then((data)=>{
 });
 
 
-// capturamos los valores del form para luego enviarlo y se cree el nuevo producto
-const formulario = document.querySelector('[data-form]')
-formulario.addEventListener('submit',(evento)=>{
-    evento.preventDefault();
-    let radioValor =0;
-    const url ='../../img/iphones/iphone14_pro_max_gold.jpg'
-    const nombre = document.querySelector('[data-nombre]').value
-    const color  = document.querySelector('[data-color]').value
-    const almacenamiento ='256';
-    const precio = document.querySelector('[data-precio]').value;
-    const almacenamieto = document.getElementsByName('memoria');
-    for (const radio of almacenamieto) {
-        if (radio.checked) {
-            radioValor  = radio.value
-        }
-    }
 
-    clientService.crearProducto(url,nombre,color,radioValor,precio).then(respuesta=>{
-        window.location.href="./dashboard.html"
-    }).catch(Error=>{
-        console.log(Error)
-    })
-});
+// capturamos los valores del form para luego enviarlo y se cree el nuevo producto
+
+//este es el formulario de celular
+    const formularioCel = document.querySelector('[data-formCel]');
+    formularioCel.addEventListener('submit',async (evento)=>{
+        evento.preventDefault();
+        let radioValor =0;
+        let nombreimg='';
+        const nombre = document.querySelector('[data-nombre]').value
+        const color  = document.querySelector('[data-color]').value
+        const precio = document.querySelector('[data-precio]').value;
+        const almacenamieto = document.getElementsByName('memoria');
+        const marca = "Apple"
+        const producto = "celular"
+
+        nombreimg = nombre.toLowerCase();
+        nombreimg = nombreimg.replace(/ /g, "");
+        const url =`../../img/iphones/${nombreimg}_${color.toLowerCase()}.jpg`
+        
+        for (const radio of almacenamieto) {
+            if (radio.checked) {
+                radioValor  = radio.value
+            }
+        }
+        //await clientService.crearProducto(url,nombre,color,radioValor,precio);
+        //window.location.href="./dashboard.html"
+        clientService.crearProducto(url,nombre,color,radioValor,precio,marca,producto).then(respuesta=>{
+            window.location.href="./dashboard.html";
+        }).catch(Error=>{
+            console.log(Error)
+        })
+    });
+
+
+//este es el formulario de laptops
+    const formularioCompu = document.querySelector('[data-formCompu]');
+    formularioCompu.addEventListener('submit',async (evento)=>{
+        evento.preventDefault();
+        let memoriaSSD =0;
+        let memoriaIT =0;
+        let memoriaRam =0;
+        let nombreimg='';
+
+        const modelo = document.querySelector('[data-modelo').value;
+        const color  = document.querySelector('[data-colores]').value;
+        const precio = document.querySelector('[data-precioCompu]').value;
+        const procesador = document.querySelector('[data-procesador]').value;
+        const marca = document.querySelector('[data-marca]').value;
+        const almacenamientoSSD = document.getElementsByName('memoriaSSD');
+        const almacenamientoIT = document.getElementsByName('memoriaIT');
+        const Ram = document.getElementsByName('memoriaRAM');
+        const producto = "computadora"
+
+        nombreimg = modelo.toLowerCase();
+        nombreimg = nombreimg.replace(/ /g, "");
+        const url =`../../img/laptos/laptop_hpvictus _negro.webp`
+        
+        for (const radio of almacenamientoSSD) {
+            if (radio.checked) {
+                memoriaSSD  = radio.value
+            }
+        }
+        for (const radio of almacenamientoIT) {
+            if (radio.checked) {
+                memoriaIT = radio.value
+            }
+        }
+        for (const radio of Ram) {
+            if (radio.checked) {
+                memoriaRam  = radio.value
+            }
+        }
+        //await clientService.crearProducto(url,nombre,color,memoriaSSD,precio);
+        //window.location.href="./dashboard.html"
+        clientService.crearProductoCompu(url,modelo,color,memoriaIT,memoriaSSD,precio,marca,procesador,memoriaRam,producto).then(respuesta=>{
+            window.location.href="./dashboard.html";
+        }).catch(Error=>{
+            console.log(Error)
+        })
+    });
 
 
 // manda a llamar el modulo de eliminar pasando como parametro el id de producto
@@ -75,3 +133,35 @@ contentDashboard.addEventListener('click',(e)=>{
     const elimina = new dashboard;
     e.target.id? elimina.elimina(e.target.id):false
 })
+
+
+
+
+
+
+
+// lista de colores solo para celulares
+const nombre = document.querySelector('[data-nombre]');
+nombre.addEventListener('blur',()=>{
+    verficaColores(nombre.value)
+})
+
+function verficaColores (color){
+    const listaColor = document.querySelector('#ncolor');
+    const colores={
+        'Iphone 14 PRO MAX':['Black','Gold','Silver'],
+        'Iphone 14':['Blue','Midnight','Purple','Yellow','Red'],
+        'Iphone 13 PRO MAX':['Green','Midnight'],
+        'Iphone SE': ['Red','Midnight','White']
+    }
+    for (const key in colores) {
+        if(key == color.trim()){
+            listaColor.innerHTML='';
+            for (const iterator of colores[key]) {
+                const option = document.createElement('option');
+                option.value = iterator;
+                listaColor.appendChild(option);
+            }
+        }
+    }
+}

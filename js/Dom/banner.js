@@ -4,7 +4,6 @@ const puntos = document.querySelectorAll('.punto')
 
 
 puntos.forEach((cadaPunto, i)=>{
-    console.log(puntos[i])
     cadaPunto.addEventListener('click',()=>{
         let posicion = i;
         let operacion = posicion * -25;

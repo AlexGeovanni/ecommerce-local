@@ -9,7 +9,7 @@
     padding-bottom: 2rem;
     padding-top: 2rem;
     max-width: 380px;
-    width: 330px;
+    width: 430px;
     height: 100vh;
 
 
@@ -17,7 +17,7 @@
     flex-direction: column;
 
 
-    transform: translateX(500px);
+    transform: translateX(600px);
     transition: all .3s ease-in-out;
     box-shadow: -5px 1px 10px -12px #000;
 }
@@ -45,7 +45,7 @@
 }
 /*Webkit*/
 .productos_agregados::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;
     height: 5px;
 }
 .productos_agregados::-webkit-scrollbar-track {

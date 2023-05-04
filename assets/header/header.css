@@ -22,7 +22,6 @@ header{
 }
 .content-nav i{
     cursor: pointer;
-    font-size: 1.350rem;
 }
 .content-nav .buscador,
 .content-nav .menu,
@@ -108,8 +107,17 @@ header{
 
 
 /* carrito ce compra */
+.carrito-compra{
+    padding: 1.25rem .2rem;
+    cursor: pointer;
+}
+.carrito-compra a{
+    font-size: 1.2rem;
+    color: var(--colorLetra);
+}
 .content-nav .carrito-compra i{
     position: relative;
+    font-size: 1.150rem;
 }
 .carrito-compra i.comprando::after{
     position: absolute;
@@ -133,8 +141,12 @@ header{
     margin-left: 1.2rem;
 }
 
-.content-nav .usuario i:hover,
-.content-nav .carrito-compra i:hover{
+.carrito-compra:hover{
+    transform: scale(1.1);
+    background-color: #cfcfcf;
+    transition: all .3s ease-in-out;
+}
+.content-nav .usuario i:hover{
     transform: scale(1.1);
     transition: all .3s ease-in-out;
 }

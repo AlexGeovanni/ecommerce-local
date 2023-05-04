@@ -1,36 +1,38 @@
 
-.card__cel{
+.card__cel,
+.card__lap{
     position: relative;
-    padding: 1rem 0;
-    width: calc(100% - 20px);
+    padding: 1rem ;
+    width: 100%;
     background-color: #fff;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     box-shadow: -1px 3px 12px -5px #00000088;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.card__cel .info_cel {
+.card__cel .info_cel{
+    width: 100%;
     margin-top: .5rem;
 }
 .card__cel .info_cel > h2{
-    width: 100%;
     text-align: center;
 }
-.card__cel .info_cel > div{
-    width: 150px;
+.card__cel .info_cel > div
+,.card__lap .info_lap > div{
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
-.card__cel div h2{
+.card__cel div h2,
+.card__lap div h2{
     font-size: 1rem;
     font-weight: 500;
 }
 .card__cel div div p{
-    font-size: .8rem;
-    font-weight: 400;
+    font-size: 1rem;
 }
+
 .card__cel div div p:first-child{
     font-weight: 300;
 }
@@ -38,13 +40,15 @@
     font-weight: 400;
 }
 
-.image__cel img{
+.image__cel img,
+.image__lap img{
     width: 100%;
-    aspect-ratio: 3/2;
+    aspect-ratio: 4/3;
     object-fit: contain;
 }
 
-.card__cel button{
+.card__cel button,
+.card__lap button{
     background-color: #cccccc;
     width: 70%;
     margin-top: .2rem;
@@ -55,10 +59,28 @@
     letter-spacing: 1px;
 }
 
-.card__cel button:hover{
+.card__cel button:hover,
+.card__lap button:hover{
     background-color: #000;
     color: #fff;
     transition: all .3s ease-in-out;
 }
 
 
+
+/* laptop */
+.card__lap .info_lap{
+    width: 100%;
+}
+.card__lap .info_lap h2{
+    text-align: center;
+}
+.card__lap .info_lap p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.card__lap .info_lap p span{
+    
+    font-weight: 300;
+}
