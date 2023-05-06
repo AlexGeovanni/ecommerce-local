@@ -8,6 +8,13 @@ main{
     margin: auto;
 }
 
+.content_actualizar form{
+    display: none;
+}
+.content_actualizar .formm{
+    display: block;
+}
+
 .content_actualizar h1{
     text-align: center;
     font-weight: 400;

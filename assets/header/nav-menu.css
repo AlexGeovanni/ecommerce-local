@@ -51,3 +51,7 @@
 .nav ul .content-menu:hover .menu{
     display: block;
 }
+
+.nav ul .bloqueado{
+    display: none;
+}

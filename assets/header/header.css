@@ -19,16 +19,17 @@ header{
     display: flex;
     align-items: baseline;
     justify-content: center;
+    gap: 15px;
 }
 .content-nav i{
     cursor: pointer;
 }
-.content-nav .buscador,
+/* .content-nav .buscador,
 .content-nav .menu,
 .content-nav .carrito-compra,
 .content-nav .usuario{
-    margin-right: 1.2rem;
-}
+    margin-left: 1.2rem; 
+} */
 
 
 
@@ -136,7 +137,7 @@ header{
 
 
 /* usuario */
-.content-nav .usuario i{
+.content-nav .content-usuario i{
     font-size: 1.650rem;
     margin-left: 1.2rem;
 }
@@ -146,7 +147,45 @@ header{
     background-color: #cfcfcf;
     transition: all .3s ease-in-out;
 }
-.content-nav .usuario i:hover{
+.content-nav .content-usuario i:hover{
     transform: scale(1.1);
     transition: all .3s ease-in-out;
+}
+
+.content-usuario .bloqueado{
+    display: none;
+}
+
+
+.content-usuario .usuario__verificado{
+    position: relative;
+}
+
+.usuario__verificado:hover .cerrar-sesion{
+    display: block; 
+    width: 150px;
+}
+
+.content-usuario .usuario-nombre{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content-usuario  .cerrar-sesion{
+    display: none;
+    position: absolute;
+    width: 150px;
+    bottom: -22px;
+    left: -20px;
+    font-weight: 400;
+    font-size: .950rem;
+    color: rgba(0,0,0,.5);
+    cursor: pointer;
+    text-align: center;
+}
+
+.content-usuario .cerrar-sesion:hover{
+    color: rgba(0,0,0,1);
 }

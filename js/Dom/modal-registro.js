@@ -19,7 +19,7 @@ cierrarModal.forEach((element)=>{
 })
 
 //muestra o quita el modal dependiendo si tiene o no la clase
-const modal=()=>{
+export const modal=()=>{
     contentForm.classList.toggle('show__modal')
 }
 

@@ -47,20 +47,24 @@
                             <a href="./index.html">Inicio</a>
                             <i class="fa-solid fa-chevron-down"></i>
                             <ul class="menu">
-                                <li><a href="#content_cards">Celulares</a></li>
-                                <li><a href="#">Computadoras</a></li>
+                                <li><a href="./index.html">Celulares</a></li>
+                                <li><a href="./index.html">Computadoras</a></li>
                                 <li><a href="#contacto">Contacto</a></li>
                             </ul>
                         </li>
-                        <li class="dash"><a href="./dashboard.html">Dashboard</a></li>
+                        <li class="dash bloqueado" data-dashboradNav><a href="./dashboard.html">Dashboard</a></li>
                     </ul>
                 </nav>
                 <div class="carrito-compra" data-compra>
                     <a href="./carrito_compras.html" data-carrito>Carrito <i class="fa-solid fa-cart-shopping"
                             data-shop></i></a>
                 </div>
-                <div class="usuario" data-usuario>
-                    <i class="fa-solid fa-user-plus"></i>
+                <div class="content-usuario" >
+                    <i class="fa-solid fa-user-plus " data-usuario></i> 
+                    <div class="usuario__verificado bloqueado" data-usuariosVerificado>
+                        <h2 class="usuario-nombre" data-usuarioNombre>Alex Geovanni</h2>
+                        <span class="cerrar-sesion" data-cerrarSesion>Cerrar sesión</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,7 +74,7 @@
             <div class="content iniciar  close__form" data-iniciaForm>
                 <i class=" fa-solid fa-xmark" data-closeModal></i>
                 <h1 class="titulo titulo__ingresar">Iniciar session</h1>
-                <form action="" class="formulario form__ingresar">
+                <form  class="formulario form__ingresar" data-ingresaUsuario>
                     <div>
                         <input id="email-inicia" type="email" required>
                         <span>Correo</span>
@@ -125,30 +129,9 @@
             </div>
         </div>
     </section>
-    <!-- <div class="productos" data-productos>
-        <i class="fa-solid fa-chevron-right cerrar_productos" data-cerraCarrito></i>
-
-        <h1>Productos añadidos</h1>
-        <div class="productos_agregados" data-productosAñadidos>
-            <div>
-
-            </div>
-        </div>
-        <div class="producto__final">
-            <div>
-                <h2>Produtos totales</h2>
-                <p data-cantidad>0</p>
-            </div>
-
-            <div>
-                <h2>Precio total</h2>
-                <p data-total>0</p>
-            </div>
-        </div>
-    </div> -->
     <main>
-        <section class="detalle">
-            <div class="info-detalle">
+        <section id="detalle_producto" class="detalle">
+            <!-- <div class="info-detalle">
                 <div class="imgen">
                     <img src="./img/iphones/iphone13promax_midnight.jpg" alt="">
                 </div>
@@ -171,7 +154,7 @@
                 <h2 class="precio">$19,000</h2>
                 <p>Hasta 18 meses sin intereses</p>
                 <button>Agregar</button>
-            </div>
+            </div> -->
         </section>
         <section id="contacto" class="contacto">
             <div class="content__contacto">
@@ -210,10 +193,11 @@
                 </a>
         </div>
     </footer>
-    <script src="./js/Dom/modal-registro.js"></script>
+    <script type="module" src="./js/Dom/modal-registro.js"></script>
     <script src="./js/Dom/headerBuscador.js"></script>
+    <script type="module" src="./js/validor.cliente_admin.js"></script>
 
     <!-- Este scrip solo para el index -->
-    <script type="module" src="./js/controllers/anadir_carrito.controller.js"></script>
+    <script type="module" src="./js/controllers/detalle.js"></script>
 </body>
 </html>

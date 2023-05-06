@@ -1,36 +1,33 @@
 import { clientService } from "../cliente_service.js";
 
-const btn = document.querySelector('#content_cards__iphone');
+
+const btns = document.querySelectorAll('[data-contentProducto]');
 //const carrito = document.querySelector('[data-carrito]')
 
-btn.addEventListener('click',async(e)=>{
-    if(e.target.type=='submit'){
-        e.preventDefault();
-        await añadirCarrito(e.target.id);
-        // const productos = document.querySelector('[data-shop]').addEventListener('click',()=>{
-        //     ele.forEach(({id,nombre,img,color,memoria,precio})=>{
-        //         clientService.productoAnadir(id,nombre,img,color,memoria,precio)
-        //     })
-        // })
-    //     const productos = document.querySelector('[data-compra]');
-    //     productos.addEventListener('click',()=>{
-    //         ele.map(({cantidad, id,nombre,img,color,memoria,precio})=>{
-    //         console.log(cantidad,id,nombre,img,color,memoria,precio);
-    //         clientService.productoAnadir(id,nombre,img,color,memoria,precio);
-    //     })
-    // })
-    }
-});
+btns.forEach((element)=>{
+    element.addEventListener('click',async(e)=>{
+        if(e.target.localName != "button" && e.target.localName != "div" && e.target.localName != "p"){
+            const id = e.target.parentElement.parentElement.id
+            window.location.href=`./detalle_producto.html?id=${id}`;
+        }
+        if(e.target.type=='submit'){
+            e.preventDefault();
+            await añadirCarrito(e.target.parentElement.id);
+        }
+    });
+})
 
 let cantidad = 1;
 const añadirCarrito=async(id)=>{
+    console.log(id)
     let bolean = false;
-    const iphone = await clientService.datelleProducto(id);
-    let nombre =iphone.titulo
-    let precio =Number(iphone.precio)
-    let color =iphone.color
-    let img =iphone.img
-    let memoria =iphone.gb
+    const producto = await clientService.datelleProducto(id);
+    let nombre =producto.titulo
+    let precio =Number(producto.precio)
+    let color =producto.color
+    let img =producto.img
+    let memoria =producto.gb
+    let marca = producto.marca
 
     const lPAnaadidos = await clientService.listaproductoAnadidos();
     for (const key of lPAnaadidos) {
@@ -41,37 +38,7 @@ const añadirCarrito=async(id)=>{
         }
     }
     !bolean?
-        clientService.productoAnadir(id,img,nombre,color,memoria,precio,cantidad):
+        clientService.productoAnadir(id,img,nombre,color,memoria,precio,cantidad,marca):
         clientService.cantidadCarrito(id,cantidad)
-    
-    //clientService.productoAnadir(idbtn,nombre,img,color,memoria,precio);
-    
-
-    //const producto = {id,nombre,img,color,memoria,precio,cantidad};
-
-    // if(bolean){
-    //     producto.cantidad = 0;
-    //     productoAnadido.push(producto)
-    //     bolean=false
-    // }
-    // for (const idis of productoAnadido) {
-    //     if(idis.id == id){
-    //         idis.cantidad+=1
-    //         bolean = false;
-    //         break;
-    //     }else bolean = true
-
-    // }
-    // if(bolean){
-    //     productoAnadido.push(producto)
-    //     bolean=false
-    // }
-    // console.log(productoAnadido)
-    //const productos = document.querySelector('[data-compra]');
-        //productos.addEventListener('click',()=>{
-        //     productoAnadido.map(({cantidad, id,nombre,img,color,memoria,precio})=>{
-        //     console.log(cantidad,id,nombre,img,color,memoria,precio);
-        //})
-    //})
 }
 

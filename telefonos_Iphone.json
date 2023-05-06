@@ -1,69 +1,26 @@
 {
   "producto": [
     {
-      "id": "0aff8fa5-b70f-4355-8a60-2f2d8b8d027b",
-      "img": "../../img/iphones/iphone14_midnight.jpg",
-      "titulo": "Iphone 14",
-      "color": "Midnight",
-      "gb": "128",
-      "precio": "20000",
-      "marca": "Apple",
-      "producto": "celular"
-    },
-    {
-      "id": "342bf577-a3f9-4225-8601-ec4bb39ab099",
+      "id": "7fc4c447-ea5e-4209-942f-7ffade94753e",
       "img": "../../img/iphones/iphone13promax_green.jpg",
       "titulo": "Iphone 13 PRO MAX",
       "color": "Green",
-      "gb": "256",
-      "precio": "25000",
+      "gb": "128 GB",
+      "precio": "19200",
       "marca": "Apple",
       "producto": "celular"
-    },
-    {
-      "id": "ae7270f1-8d6d-43b5-8e12-5cb1e749803f",
-      "img": "../../img/iphones/iphonese_red.jpg",
-      "titulo": "Iphone SE",
-      "color": "Red",
-      "gb": "64",
-      "precio": "18000",
-      "marca": "Apple",
-      "producto": "celular"
-    },
-    {
-      "id": "d0ad9a3a-b6f7-466c-8a24-4150efe5ac63",
-      "img": "../../img/iphones/iphone14promax_gold.jpg",
-      "titulo": "Iphone 14 PRO MAX",
-      "color": "Gold",
-      "gb": "512",
-      "precio": "35000",
-      "marca": "Apple",
-      "producto": "celular"
-    },
-    {
-      "id": "edb58cb3-2991-4ba0-8c49-383fc7743d22",
-      "img": "../../img/laptos/laptop_hpvictus _negro.webp",
-      "titulo": "asasasa",
-      "color": "Negro",
-      "gb": "512",
-      "gbssd": "256",
-      "precio": "18000",
-      "marca": "Hp",
-      "procesador": "Intel Core i5",
-      "ram": "12",
-      "producto": "computadora"
     }
   ],
   "produtoAnadido": [],
   "usuarios": [
     {
-      "contraseña": "alex120",
+      "id": "alex120",
       "correo": "alex@gmail.com",
       "nombre": "Admin",
       "tipo": 1
     },
     {
-      "contraseña": "Geova2001",
+      "id": "Geova2001",
       "correo": "Geova@gmail.com",
       "nombre": "Alex Geovanni",
       "tipo": 2

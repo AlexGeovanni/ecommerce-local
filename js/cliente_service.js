@@ -13,7 +13,6 @@ const crearProducto =(img,titulo,color,gb,precio,marca,producto)=>{
     })
 }
 const crearProductoCompu =(img,titulo,color,gb,gbssd,precio,marca,procesador,ram,producto)=>{
-
     return fetch('http://localhost:3000/producto',{
         method:"POST",
         headers:{
@@ -39,31 +38,42 @@ const datelleProducto = async (id)=>{
 
 
 // para actualizar el producto
-const actualizarProducto=(id,img,titulo,color,gb,precio)=>{
+const actualizarProducto=(id,img,titulo,color,gb,precio,marca,producto)=>{
     return fetch(`http://localhost:3000/producto/${id}`,{
         method: "PUT",
         headers:{
             "Content-Type":"application/json"
         },
-        body:JSON.stringify({id,img,titulo,color,gb,precio})
+        body:JSON.stringify({id,img,titulo,color,gb,precio,marca,producto})
     })
 }
-
+const actualizarProductoCompu =(id,img,titulo,color,gb,gbssd,precio,marca,procesador,ram,producto)=>{
+    return fetch(`http://localhost:3000/producto/${id}`,{
+        method:"PUT",
+        headers:{
+            "content-Type":"application/json"
+        },
+        body: JSON.stringify({id,img,titulo,color,gb,gbssd,precio,marca,procesador,ram,producto})
+    })
+}
 
 
 
 // consulta de productos añadidos
 const listaproductoAnadidos = ()=> fetch('http://localhost:3000/produtoAnadido').then((respuesta)=> respuesta.json())
 
-const productoAnadir =(id,img,titulo,color,gb,precio,cantidad)=>{
-    return fetch('http://localhost:3000/produtoAnadido',{
-        method:"POST",
+const productoAnadir =(id,img,titulo,color,gb,precio,cantidad,marca)=>{
+    return fetch( `http://localhost:3000/produtoAnadido`,{
+        method: "POST",
         headers:{
-            "content-Type":"application/json"
+            "Content-Type":"application/json"
         },
-        body: JSON.stringify({id,img,titulo,color,gb,precio,cantidad})
+        body: JSON.stringify({id,img,titulo,color,gb,precio,cantidad,marca})
     })
 }
+
+
+
 // la cantidad de producto que se envia si el producto ya existe solo se envia la cantidad
 const cantidadCarrito=(id,cantidad)=>{
     return fetch(`http://localhost:3000/produtoAnadido/${id}`,{
@@ -81,6 +91,15 @@ const eliminarAnadidos =async (id)=> {
         method: "DELETE"
     });
 } 
+
+
+const usuarioConsulta = async (id)=>{
+    const respuesta = await fetch(`http://localhost:3000/usuarios/${id}`)
+    return await respuesta.json()
+}
+
+
+
 export const clientService ={
     listaProductos,
     crearProducto,
@@ -88,8 +107,10 @@ export const clientService ={
     eliminarProducto,
     datelleProducto,
     actualizarProducto,
+    actualizarProductoCompu,
     listaproductoAnadidos,
     productoAnadir,
     eliminarAnadidos,
     cantidadCarrito,
+    usuarioConsulta
 }

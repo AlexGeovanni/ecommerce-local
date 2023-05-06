@@ -55,14 +55,18 @@
                                 <li><a href="#contacto">Contacto</a></li>
                             </ul>
                         </li>
-                        <li class="dash"><a href="./dashboard.html">Dashboard</a></li>
+                        <li class="dash bloqueado" data-dashboradNav><a href="./dashboard.html">Dashboard</a></li>
                     </ul>
                 </nav>
                 <div class="carrito-compra">
                     <a href="./carrito_compras.html">Carrito <i class="fa-solid fa-cart-shopping" data-shop></i></a>
                 </div>
-                <div class="usuario" data-usuario>
-                    <i class="fa-solid fa-user-plus"></i>
+                <div class="content-usuario" >
+                    <i class="fa-solid fa-user-plus " data-usuario></i> 
+                    <div class="usuario__verificado bloqueado" data-usuariosVerificado>
+                        <h2 class="usuario-nombre" data-usuarioNombre>Alex Geovanni</h2>
+                        <span class="cerrar-sesion" data-cerrarSesion>Cerrar sesión</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,7 +102,7 @@
             <div class="content registro " data-registraForm>
                 <i class="fa-solid fa-xmark" data-closeModal></i>
                 <h1 class="titulo titulo__ingresar">Crear cuenta</h1>
-                <form action="" class="formulario form__ingresar">
+                <form  class="formulario form__ingresar" data-ingresaUsuario>
                     <div>
                         <input id="nombre-regis" type="text" required>
                         <span>Nombre</span>
@@ -224,12 +228,14 @@
                 </a>
         </div>
     </footer>
-    <script src="./js/Dom/modal-registro.js"></script>
+    <script type="module" src="./js/Dom/modal-registro.js"></script>
     <script src="./js/Dom/headerBuscador.js"></script>
+
+    <script type="module" src="./js/validor.cliente_admin.js"></script>
 
     <!-- Este scrip solo para el carrito -->
     <script type="module" src="./js/controllers/lista_añadidos.js"></script>
-    <script src="./js/Dom/banner.js"></script>
+    <script  src="./js/Dom/banner.js"></script>
 </body>
 
 </html>

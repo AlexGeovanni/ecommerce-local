@@ -13,7 +13,7 @@
 }
 .detalle .info-detalle .imgen {
     width: 100%;
-    padding: 0 2rem;
+    padding: .8rem 2rem;
     background-color: #fff;
     margin-bottom:1rem ;
 }
@@ -54,8 +54,9 @@
 /*  */
 .detalle .info-principal{
     position: sticky;
-    top: 70px;
-    max-width: 450px;
+    top: 80px;
+    max-width: 400px;
+    width: 100%;
     padding: 1rem 1.2rem;
     background-color: #fff;
 }
@@ -75,8 +76,10 @@
     font-weight: 500;
     font-size: 1.4rem;
     margin-bottom: .7rem;
+    line-height: 28px;
 }
 .info-principal .precio{
+    margin-top: 1.550rem;
     opacity: 1;
     font-size: 1.6rem;
 }

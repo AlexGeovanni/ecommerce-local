@@ -116,7 +116,7 @@
                     <div class="alerta"><i class="fa-solid fa-circle-info"></i><p>Debe elegir primero el nombre del celular para poder ver los colores disponibles.</p></div>
                     <div class="inputs_form">
                         <div class="nombre__form">
-                            <label for="nombre">Nombre</label>
+                            <label for="nombre">Nombre <span>(Selección)</span></label>
                             <input list="nvProducto" required id="nombre" name="nombre" data-nombre 
                             pattern="^[A-Za-z\s]{1,}+[0-9\s]{1,}$">
                             <datalist id="nvProducto">
@@ -128,7 +128,7 @@
                             </datalist>
                         </div>
                         <div class="color__form">
-                            <label for="color">Color</label>
+                            <label for="color">Color <span>(Selección)</span></label>
                             <input list="ncolor"  required id="color" name="color" data-color 
                             title="Color debe empezar con una letra mayuscula ejemplo: Red" 
                             pattern="^[A-Z]{1}[a-z\s]{1,}">
@@ -142,19 +142,19 @@
                             <label for="">Almacenamiento</label>
                             <div class="radios__form">
                                 <div>
-                                    <input type="radio" name="memoria" id="memoria64" class="checkmark" value="64">
+                                    <input type="radio" name="memoria" id="memoria64" class="checkmark" value="64 GB">
                                     <label for="memoria64">64 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoria" id="memoria128" class="checkmark" value="128">
+                                    <input type="radio" name="memoria" id="memoria128" class="checkmark" value="128 GB">
                                     <label for="memoria128">128 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoria" id="memoria256" class="checkmark" value="256">
+                                    <input type="radio" name="memoria" id="memoria256" class="checkmark" value="256 GB">
                                     <label for="memoria256">256 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoria" id="memoria512" class="checkmark" value="512">
+                                    <input type="radio" name="memoria" id="memoria512" class="checkmark" value="512 GB">
                                     <label for="memoria512">512 GB</label>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@
                 <form data-formCompu id="computadora" class="">
                     <div class="inputs_form">
                         <div class="marca__form">
-                            <label for="marca">Marca</label>
+                            <label for="marca">Marca <span>(Selección)</span></label>
                             <input list="nvmarca" required id="marca" name="marca" data-marca 
                             pattern="^[A-Za-z\s]{1,}+[0-9\s]{1,}$">
                             <datalist id="nvmarca">
@@ -182,7 +182,7 @@
                             </datalist>
                         </div>
                         <div class="procesador__form">
-                            <label for="procesador">Procesador</label>
+                            <label for="procesador">Procesador<span>(Selección)</span></label>
                             <input list="nprocesador"  required id="procesador" name="procesador" data-procesador >
                             <datalist id="nprocesador">
                                 <option value="Intel Core i7">
@@ -194,15 +194,15 @@
                     </div>
                     <div class="inputs_form">
                         <div class="modelo__form">
-                            <label for="modelo">Modelo</label>
-                            <input list="nvmodelo" required id="modelo" name="modelo" data-modelo 
+                            <label for="modelo">Modelo<span>(Selección)</span></label>
+                            <input list="nmodelo" required id="modelo" name="modelo" data-modelo 
                             pattern="^[A-Za-z\s]{1,}+[0-9\s]{1,}$">
-                            <datalist id="nvmodelo">
+                            <datalist id="nmodelo">
 
                             </datalist>
                         </div>
                         <div class="color__form">
-                            <label for="color">Color</label>
+                            <label for="color">Color<span>(Selección)</span></label>
                             <input list="ncolores"  required id="color" name="color" data-colores 
                             title="Color debe empezar con una letra mayuscula ejemplo: Red" 
                             pattern="^[A-Z]{1}[a-z\s]{1,}">
@@ -217,19 +217,19 @@
                             <label for="">Almacenamiento SSD </label>
                             <div class="radios__form">
                                 <div>
-                                    <input type="radio" name="memoriaSSD" id="memoriaSSD128" class="checkmark" value="128">
+                                    <input type="radio" name="memoriaSSD" id="memoriaSSD128" class="checkmark" value="128 SSD">
                                     <label for="memoriaSSD128">128 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoriaSSD" id="memoriaSSD256" class="checkmark" value="256">
+                                    <input type="radio" name="memoriaSSD" id="memoriaSSD256" class="checkmark" value="256 SSD">
                                     <label for="memoriaSSD256">256 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoriaSSD" id="memoriaSSD512" class="checkmark" value="512">
+                                    <input type="radio" name="memoriaSSD" id="memoriaSSD512" class="checkmark" value="512 SSD">
                                     <label for="memoriaSSD512">512 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoriaSSD" id="memoriaSSD1" class="checkmark" value="1">
+                                    <input type="radio" name="memoriaSSD" id="memoriaSSD1" class="checkmark" value="1 TB">
                                     <label for="memoriaSSD1">1 TB</label>
                                 </div>
                             </div>
@@ -238,15 +238,15 @@
                             <label for="">Almacenamiento Interno </label>
                             <div class="radios__form">
                                 <div>
-                                    <input type="radio" name="memoriaIT" id="memoriaIT64" class="checkmark" value="512">
+                                    <input type="radio" name="memoriaIT" id="memoriaIT64" class="checkmark" value="512 GB">
                                     <label for="memoriaIT64">512 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoriaIT" id="memoriaIT128" class="checkmark" value="1">
+                                    <input type="radio" name="memoriaIT" id="memoriaIT128" class="checkmark" value="1 TB">
                                     <label for="memoriaIT128">1 TB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoriaIT" id="memoriaIT256" class="checkmark" value="2">
+                                    <input type="radio" name="memoriaIT" id="memoriaIT256" class="checkmark" value="2 TB">
                                     <label for="memoriaIT256">2 TB</label>
                                 </div>
                             </div>
@@ -257,15 +257,15 @@
                             <label for="">RAM </label>
                             <div class="radios__form">
                                 <div>
-                                    <input type="radio" name="memoriaRAM" id="memoriaRAM8" class="checkmark" value="8">
+                                    <input type="radio" name="memoriaRAM" id="memoriaRAM8" class="checkmark" value="8 RAM">
                                     <label for="memoriaRAM8">8 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoriaRAM" id="memoriaRAM12" class="checkmark" value="12">
+                                    <input type="radio" name="memoriaRAM" id="memoriaRAM12" class="checkmark" value="12 RAM">
                                     <label for="memoriaRAM12">12 GB</label>
                                 </div>
                                 <div>
-                                    <input type="radio" name="memoriaRAM" id="memoriaRAM16" class="checkmark" value="16">
+                                    <input type="radio" name="memoriaRAM" id="memoriaRAM16" class="checkmark" value="16 RAM">
                                     <label for="memoriaRAM16">16 GB</label>
                                 </div>
                             </div>

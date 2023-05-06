@@ -18,7 +18,7 @@ export class dashboard{
             </div>
             <h2 class="producto__nombre">${this.titulo}</h2>
             <h2 class="producto__color">${this.color}</h2>
-            <h2 class="producto__gb">${this.almacenamiento} Gb</h2>
+            <h2 class="producto__gb">${this.almacenamiento}</h2>
             <h2 class="producto__precio">$${this.precio}</h2>
             <div class="producto__acciones">
             <a  href="./actualizar_producto.html?id=${this.id}" class="editar">Editar <i class="fa-sharp fa-solid fa-pen-to-square"></i></a>
@@ -86,7 +86,6 @@ clientService.listaProductos().then((data)=>{
         let memoriaSSD =0;
         let memoriaIT =0;
         let memoriaRam =0;
-        let nombreimg='';
 
         const modelo = document.querySelector('[data-modelo').value;
         const color  = document.querySelector('[data-colores]').value;
@@ -98,9 +97,9 @@ clientService.listaProductos().then((data)=>{
         const Ram = document.getElementsByName('memoriaRAM');
         const producto = "computadora"
 
-        nombreimg = modelo.toLowerCase();
-        nombreimg = nombreimg.replace(/ /g, "");
-        const url =`../../img/laptos/laptop_hpvictus _negro.webp`
+        const modelos = modelo.replace(/ /g, "")
+
+        const url =`../../img/laptos/${marca}_${modelos}.webp`
         
         for (const radio of almacenamientoSSD) {
             if (radio.checked) {
@@ -135,11 +134,6 @@ contentDashboard.addEventListener('click',(e)=>{
 })
 
 
-
-
-
-
-
 // lista de colores solo para celulares
 const nombre = document.querySelector('[data-nombre]');
 nombre.addEventListener('blur',()=>{
@@ -161,6 +155,32 @@ function verficaColores (color){
                 const option = document.createElement('option');
                 option.value = iterator;
                 listaColor.appendChild(option);
+            }
+        }
+    }
+}
+
+// lista de modelos de computadoras dependiendo la marca
+const marca = document.querySelector('[data-marca]');
+marca.addEventListener('blur',()=>{
+    verficaModelo(marca.value)
+})
+
+function verficaModelo (modelo){
+    const listaModelo = document.querySelector('#nmodelo');
+    const modelos={
+        'Hp':['14-dq2502','15-ef2518'],
+        'Asus':['VivoBook X515EA-BQ2563W','L410MA-Cel4G128Gb-P3'],
+        'MSI':['A11MU 15.6','SWORD 15 A11UD-1248US','Stealth 15M'],
+        'Dell': ['Inspiron 3501','Latitude 7280 - 12.5']
+    }
+    for (const key in modelos) {
+        if(key == modelo.trim()){
+            listaModelo.innerHTML='';
+            for (const iterator of modelos[key]) {
+                const option = document.createElement('option');
+                option.value = iterator;
+                listaModelo.appendChild(option);
             }
         }
     }

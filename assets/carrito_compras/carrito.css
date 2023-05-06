@@ -78,12 +78,18 @@
 }
 
 /* nombre,color,memoria */
+
 .producto .info_producto{
     width: 220px;
 }
+.producto .info_producto p{
+    font-size: .850rem;
+    font-weight: 300;
+}
+
 .producto .info_producto h2{
     text-align: left;
-    font-size: 1.050rem;
+    font-size: 1.08rem;
     font-weight: 500;
 }
 

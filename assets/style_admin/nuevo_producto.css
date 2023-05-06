@@ -5,7 +5,10 @@
     padding-bottom: 1rem;
     margin-bottom: 3rem;
 }
-
+label span{
+    font-size: .8rem;
+    font-weight: 500;
+}
 .contet_nuevo-product .form{
     display: block;
 }

@@ -18,14 +18,14 @@ export class Productos{
                     <img src="${this.img}" alt="${this.titulo}">
                 </div>
                 <div class="info_cel">
-                    <h2 data-titulo  class="info">${this.titulo}</h2>
+                    <h2>${this.titulo}</h2>
                     <div>
                         <p><span>Color: </span>${this.color}</p>
-                        <p>${this.almacenamientoIT}Gb</p>
+                        <p>${this.almacenamientoIT}</p>
                     </div>
-                    <h2 data-precio class="info">$${this.precio}</h2>
+                    <p>$${this.precio}</p>
                 </div>
-                <button type="submit" id="${this.id}" class="agregar"  data-button >Agregar</button>
+                <button type="submit" class="agregar"  data-button >Agregar</button>
         `;
         contentCards.appendChild(div)
     }
@@ -41,11 +41,10 @@ export class Productos{
                 </div>
                 <div class="info_lap">
                         <h2 class="marca">${marca}</h2>
-                        <h2 data-titulo class="info">Laptop ${marca} ${procesador} ${ram} RAM ${gbssd}SSD ${this.almacenamientoIT}TB </h2>
-                        <p><span>Color: </span>${this.color}</p>
-                        <h2 data-precio class="precio">$ ${this.precio}</h2>
+                        <h2>Laptop ${marca} ${procesador} ${ram} ${gbssd} </h2>
+                        <p>$ ${this.precio}</p>
                 </div>
-                <button type="submit" id="${this.id}" class="agregar"  data-button >Agregar</button>
+                <button type="submit" class="agregar"  data-button >Agregar</button>
         `;
         contentCards.appendChild(div)
     }
