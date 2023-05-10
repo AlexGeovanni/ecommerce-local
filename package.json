@@ -8,7 +8,7 @@
   },
   "author": "Alex Geova",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexGeovanni/ecommerce-local.git"
