@@ -2,9 +2,9 @@
   "name": "tienda",
   "version": "1.0.0",
   "description": "E-commerce",
-  "main": "pages/js/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node pages/js/index.js"
+    "start": "node index.js"
   },
   "author": "Alex Geova",
   "license": "ISC",
