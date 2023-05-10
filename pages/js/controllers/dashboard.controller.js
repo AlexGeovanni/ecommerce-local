@@ -28,7 +28,7 @@ export class dashboard{
     }
     elimina(id){
         clientService.eliminarProducto(id).then(respuesta=>{
-            console.log(respuesta)
+            window.location.href="./dashboard.html"
         }).catch(Error=>{
             console.log(Error)
         })

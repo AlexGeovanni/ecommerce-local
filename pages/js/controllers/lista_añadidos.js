@@ -35,7 +35,12 @@ const pruducto =(id,img,nombre,color,memoria,precio,cantidad,marca,preProducto,p
 
 const contentProducto = document.querySelector('[data-productosAnadidos]');
 contentProducto.addEventListener('click',(e)=>{
-    e.target.id? clientService.eliminarAnadidos(e.target.id):false
+    if(e.target.id){
+        clientService.eliminarAnadidos(e.target.id).then(()=>{
+            window.location.href="./carrito_compras.html"
+        })
+
+    }
 });
 
 
