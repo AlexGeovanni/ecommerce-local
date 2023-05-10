@@ -1,5 +1,5 @@
-const listaProductos = ()=> fetch('http://localhost:3000/producto').then((respuesta)=> respuesta.json())
 
+const listaProductos = ()=> fetch('http://localhost:3000/producto').then((respuesta)=> respuesta.json())
 
 //para crear productos
 const crearProducto =(img,titulo,color,gb,precio,marca,producto)=>{
