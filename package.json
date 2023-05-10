@@ -4,16 +4,22 @@
   "description": "E-commerce",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alex Geova",
   "license": "ISC",
-  "type": "commonjs",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexGeovanni/ecommerce-local.git"
   },
-  "keywords": [],
+  "keywords": [
+    "restful",
+    "rest",
+    "vercel",
+    "json",
+    "index"
+  ],
   "bugs": {
     "url": "https://github.com/AlexGeovanni/ecommerce-local/issues"
   },
