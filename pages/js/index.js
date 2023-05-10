@@ -9,6 +9,11 @@ const port = process.env.PORT || 3000;
 
 server.use(middlewares)
 server.use(router)
+server.use(jsonServer.rewriter({
+    '/api/*': '/$1',
+    '/blog/:resource/:id/show': '/:resource/:id'
+}))
+
 server.listen(port, () => {
     console.log('JSON Server is running',port)
 })
