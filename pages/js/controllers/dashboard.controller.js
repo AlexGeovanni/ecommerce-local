@@ -62,7 +62,7 @@ clientService.listaProductos().then((data)=>{
 
         nombreimg = nombre.toLowerCase();
         nombreimg = nombreimg.replace(/ /g, "");
-        const url =`../../img/iphones/${nombreimg}_${color.toLowerCase()}.jpg`
+        const url =`./img/iphones/${nombreimg}_${color.toLowerCase()}.jpg`
         
         for (const radio of almacenamieto) {
             if (radio.checked) {
@@ -99,7 +99,7 @@ clientService.listaProductos().then((data)=>{
 
         const modelos = modelo.replace(/ /g, "")
 
-        const url =`../../img/laptos/${marca}_${modelos}.webp`
+        const url =`./img/laptos/${marca}_${modelos}.webp`
         
         for (const radio of almacenamientoSSD) {
             if (radio.checked) {

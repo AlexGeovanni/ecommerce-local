@@ -2,11 +2,20 @@
   "name": "tienda",
   "version": "1.0.0",
   "description": "E-commerce",
-  "main": "./js/carrito-buscador.js",
+  "main": "./pages/js/carrito-buscador.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alex Geova",
   "license": "ISC",
-  "type":"module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexGeovanni/ecommerce-local.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/AlexGeovanni/ecommerce-local/issues"
+  },
+  "homepage": "https://github.com/AlexGeovanni/ecommerce-local#readme"
 }

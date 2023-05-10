@@ -54,7 +54,7 @@ const ActualizarCelular=({titulo,color,gb,precio,marca,producto})=>{
 
         nombreimg = nombre.toLowerCase();
         nombreimg = nombreimg.replace(/ /g, "");
-        const url =`../../img/iphones/${nombreimg}_${color.toLowerCase()}.jpg`
+        const url =`./img/iphones/${nombreimg}_${color.toLowerCase()}.jpg`
 
         for (const radio of almacenamieto) {
             if (radio.checked) {
@@ -62,7 +62,7 @@ const ActualizarCelular=({titulo,color,gb,precio,marca,producto})=>{
             }
         }
         await clientService.actualizarProducto(id,url,nombre,color,radioValor,precio,marca,producto)
-            window.location.href='../../dashboard.html'
+            window.location.href='../../pages/dashboard.html'
         // clientService.actualizarProducto(id,url,nombre,color,radioValor,precio).then(()=>{
         //     window.location.href='../../dashboard.html'
         // })
@@ -146,10 +146,10 @@ const ActualizarComputadora =({titulo,color,gb,gbssd,precio,marca,procesador,ram
         }
 
         const modelos = modelo.replace(/ /g, "")
-        const url =`../../img/laptos/${marca}_${modelos}.webp`
+        const url =`./img/laptos/${marca}_${modelos}.webp`
 
         await clientService.actualizarProductoCompu(id,url,modelo,color,memoriaIT,memoriaSSD,precio,marca,procesador,memoriaRam,producto)
-            window.location.href='../../dashboard.html'
+            window.location.href='../../pages/dashboard.html'
     })
 
 }

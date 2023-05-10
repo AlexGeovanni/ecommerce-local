@@ -2,11 +2,123 @@
   "producto": [
     {
       "id": "7fc4c447-ea5e-4209-942f-7ffade94753e",
-      "img": "../../img/iphones/iphone13promax_green.jpg",
+      "img": "./img/iphones/iphone13promax_green.jpg",
       "titulo": "Iphone 13 PRO MAX",
       "color": "Green",
       "gb": "128 GB",
       "precio": "19200",
+      "marca": "Apple",
+      "producto": "celular"
+    },
+    {
+      "id": "c62e84f4-233d-438e-a34b-4727fdd90dfb",
+      "img": "./img/iphones/iphone14promax_gold.jpg",
+      "titulo": "Iphone 14 PRO MAX",
+      "color": "Gold",
+      "gb": "128 GB",
+      "precio": "29000",
+      "marca": "Apple",
+      "producto": "celular"
+    },
+    {
+      "id": "288fa20c-da99-4956-a5f2-c7fc87b82dc1",
+      "img": "./img/laptos/Asus_L410MA-Cel4G128Gb-P3.webp",
+      "titulo": "L410MA-Cel4G128Gb-P3",
+      "color": "Plateado",
+      "gb": "1 TB",
+      "gbssd": "256 SSD",
+      "precio": "21000",
+      "marca": "Asus",
+      "procesador": "Intel Core i3-1115G4",
+      "ram": "12 RAM",
+      "producto": "computadora"
+    },
+    {
+      "id": "fc4be0b3-353b-4148-bb82-9378f3f73f87",
+      "img": "./img/laptos/Hp_15-ef2518.webp",
+      "titulo": "15-ef2518",
+      "color": "Plateado",
+      "gb": "1 TB",
+      "gbssd": "512 SSD",
+      "precio": "23000",
+      "marca": "Hp",
+      "procesador": "Intel Core i5",
+      "ram": "16 RAM",
+      "producto": "computadora"
+    },
+    {
+      "id": "799d4fa5-b05f-4930-8300-f1c93b330df9",
+      "img": "./img/laptos/Hp_14-dq2502.webp",
+      "titulo": "14-dq2502",
+      "color": "Plateado",
+      "gb": "512 GB",
+      "gbssd": "1 TB",
+      "precio": "24000",
+      "marca": "Hp",
+      "procesador": "AMD Ryzen 9 5900HX",
+      "ram": "12 RAM",
+      "producto": "computadora"
+    },
+    {
+      "id": "a7b664fe-752b-48e9-979b-fd9e40ad9a27",
+      "img": "./img/laptos/Asus_VivoBookX515EA-BQ2563W.webp",
+      "titulo": "VivoBook X515EA-BQ2563W",
+      "color": "Negro",
+      "gb": "2 TB",
+      "gbssd": "512 SSD",
+      "precio": "26000",
+      "marca": "Asus",
+      "procesador": "AMD Ryzen 9 5900HX",
+      "ram": "16 RAM",
+      "producto": "computadora"
+    },
+    {
+      "id": "4cdae13e-158a-4330-bfb4-88f9a4aa0a45",
+      "img": "./img/iphones/iphonese_midnight.jpg",
+      "titulo": "Iphone SE",
+      "color": "Midnight",
+      "gb": "64 GB",
+      "precio": "12000",
+      "marca": "Apple",
+      "producto": "celular"
+    },
+    {
+      "id": "3a87f034-e1cb-470c-bdd9-e1d30f23f087",
+      "img": "./img/iphones/iphone14_purple.jpg",
+      "titulo": "Iphone 14",
+      "color": "Purple",
+      "gb": "128 GB",
+      "precio": "20000",
+      "marca": "Apple",
+      "producto": "celular"
+    },
+    {
+      "id": "344ec9c0-6d57-4341-ae3e-f40fafaee8fe",
+      "img": "./img/iphones/iphone14_yellow.jpg",
+      "titulo": "Iphone 14",
+      "color": "Yellow",
+      "gb": "256 GB",
+      "precio": "23000",
+      "marca": "Apple",
+      "producto": "celular"
+    },
+    {
+      "id": "44312b59-3fe4-40fb-9f1e-9025423d7132",
+      "img": "./img/iphones/iphone14_blue.jpg",
+      "titulo": "Iphone 14",
+      "color": "Blue",
+      "gb": "512 GB",
+      "precio": "25000",
+      "marca": "Apple",
+      "producto": "celular"
+    },
+    {
+      "id": "fbd806ee-c83b-4452-8541-25290c5fea31",
+      "img": "./img/iphones/iphone13promax_midnight.jpg",
+      "titulo": "Iphone 13 PRO MAX",
+      "color": "Midnight",
+      "gb": "128 GB",
+      "precio": "22000",
       "marca": "Apple",
       "producto": "celular"
     }
