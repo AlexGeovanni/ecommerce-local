@@ -4,7 +4,7 @@
   "description": "E-commerce",
   "main": "pages/js/index.js",
   "scripts": {
-    "start": "node ./pages/js/index.js"
+    "start": "node pages/js/index.js"
   },
   "author": "Alex Geova",
   "license": "ISC",
